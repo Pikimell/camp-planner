@@ -1,0 +1,415 @@
+.page {
+  width: 100%;
+  min-height: 100vh;
+  padding: 32px;
+}
+
+.header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 24px;
+  max-width: 1280px;
+  margin-bottom: 28px;
+}
+
+.eyebrow {
+  margin-bottom: 8px;
+  color: #587065;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.title {
+  color: #10231d;
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 1.1;
+}
+
+.counter {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 48px;
+  height: 48px;
+  padding: 0 12px;
+  border: 1px solid #d8dfd2;
+  border-radius: 8px;
+  background: #ffffff;
+  color: #10231d;
+  font-size: 22px;
+  font-weight: 800;
+}
+
+.section {
+  max-width: 1280px;
+  min-height: 680px;
+  padding: 22px;
+  border: 1px solid #d8dfd2;
+  border-radius: 8px;
+  background: #ffffff;
+}
+
+.toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 18px;
+}
+
+.teamSwitcher {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.teamButton,
+.addDayButton,
+.deleteDayButton {
+  min-height: 38px;
+  padding: 0 12px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.teamButton {
+  border: 1px solid #d8dfd2;
+  background: #f7faf5;
+  color: #42564d;
+}
+
+.teamButton:hover {
+  background: #eef4ea;
+}
+
+.activeTeamButton {
+  border-color: #10231d;
+  background: #10231d;
+  color: #ffffff;
+}
+
+.activeTeamButton:hover {
+  background: #10231d;
+}
+
+.addDayButton {
+  border: 0;
+  background: #10231d;
+  color: #ffffff;
+}
+
+.addDayButton:hover {
+  background: #1d3a31;
+}
+
+.planner {
+  display: grid;
+  grid-template-columns: 280px minmax(0, 1fr);
+  gap: 18px;
+  align-items: start;
+}
+
+.poolPanel {
+  position: sticky;
+  top: 18px;
+  min-height: 560px;
+  padding: 14px;
+  border: 1px solid #d8dfd2;
+  border-radius: 8px;
+  background: #f7faf5;
+}
+
+.panelHeader,
+.dayHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.panelHeader h2,
+.dayHeader h2 {
+  color: #10231d;
+  font-size: 16px;
+  font-weight: 800;
+}
+
+.panelHeader span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 28px;
+  height: 28px;
+  border-radius: 8px;
+  background: #e1f26b;
+  color: #10231d;
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.membersPool,
+.dayDropZone {
+  display: flex;
+  min-height: 480px;
+  flex-direction: column;
+  gap: 8px;
+  padding: 8px;
+  border: 1px dashed #cbd7c6;
+  border-radius: 8px;
+  background: #ffffff;
+  transition:
+    background-color 160ms ease,
+    border-color 160ms ease;
+}
+
+.dropTargetActive {
+  border-color: #10231d;
+  background: #eef4ea;
+}
+
+.daysBoard {
+  display: grid;
+  grid-auto-columns: minmax(240px, 1fr);
+  grid-auto-flow: column;
+  gap: 14px;
+  overflow-x: auto;
+  padding-bottom: 8px;
+}
+
+.dayColumn {
+  min-height: 560px;
+  padding: 14px;
+  border: 1px solid #d8dfd2;
+  border-radius: 8px;
+  background: #f7faf5;
+}
+
+.deleteDayButton {
+  border: 1px solid #f0c8c8;
+  background: #fff4f4;
+  color: #9f2424;
+  font-size: 12px;
+}
+
+.deleteDayButton:hover {
+  background: #ffe9e9;
+}
+
+.memberCard,
+.dragOverlay {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  min-height: 42px;
+  padding: 10px 12px;
+  border: 1px solid #d8dfd2;
+  border-radius: 8px;
+  background: #ffffff;
+  color: #10231d;
+  font: inherit;
+  font-size: 14px;
+  font-weight: 800;
+  text-align: left;
+  cursor: grab;
+  touch-action: none;
+  box-shadow: 0 1px 0 rgba(16, 35, 29, 0.04);
+}
+
+.memberCard:active {
+  cursor: grabbing;
+}
+
+.dragging {
+  opacity: 0.35;
+}
+
+.dragOverlay {
+  width: 240px;
+  box-shadow: 0 12px 24px rgba(16, 35, 29, 0.18);
+}
+
+.emptyState,
+.emptyDropState,
+.emptyBoard {
+  padding: 18px;
+  border: 1px dashed #cbd7c6;
+  border-radius: 8px;
+  background: #f7faf5;
+  color: #587065;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.emptyDropState {
+  display: flex;
+  min-height: 96px;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  text-align: center;
+}
+
+.emptyBoard {
+  display: flex;
+  min-height: 560px;
+  align-items: center;
+  justify-content: center;
+}
+
+.readySection {
+  max-width: 1280px;
+  margin-top: 24px;
+  padding: 22px;
+  border: 1px solid #d8dfd2;
+  border-radius: 8px;
+  background: #ffffff;
+}
+
+.readyHeader {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 18px;
+}
+
+.readyHeader h2 {
+  color: #10231d;
+  font-size: 26px;
+  font-weight: 800;
+  line-height: 1.15;
+}
+
+.readyHeader > span {
+  display: inline-flex;
+  align-items: center;
+  min-height: 34px;
+  padding: 0 12px;
+  border-radius: 8px;
+  background: #e1f26b;
+  color: #10231d;
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.readySchedule {
+  display: grid;
+  gap: 8px;
+}
+
+.readyDay {
+  display: grid;
+  grid-template-columns: 110px minmax(0, 1fr);
+  gap: 12px;
+  align-items: stretch;
+  min-height: 58px;
+  padding: 10px;
+  border: 1px solid #e2e9df;
+  border-radius: 8px;
+  background: #f7faf5;
+}
+
+.readyDayNumber {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  background: #10231d;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.readyTeams {
+  display: grid;
+  gap: 8px;
+}
+
+.readyTeam {
+  display: grid;
+  grid-template-columns: 110px minmax(0, 1fr);
+  gap: 10px;
+  align-items: center;
+  padding: 8px 10px;
+  border-radius: 8px;
+  background: #ffffff;
+}
+
+.readyTeam strong {
+  color: #42564d;
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.readyTeam span {
+  color: #10231d;
+  font-size: 14px;
+  font-weight: 800;
+  line-height: 1.35;
+}
+
+.readyEmpty {
+  display: flex;
+  align-items: center;
+  min-height: 38px;
+  padding: 8px 10px;
+  border-radius: 8px;
+  background: #ffffff;
+  color: #587065;
+  font-size: 14px;
+  font-weight: 800;
+}
+
+@media (max-width: 920px) {
+  .page {
+    padding: 20px;
+  }
+
+  .header,
+  .toolbar {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .title {
+    font-size: 32px;
+  }
+
+  .planner {
+    grid-template-columns: 1fr;
+  }
+
+  .poolPanel {
+    position: static;
+    min-height: auto;
+  }
+
+  .membersPool,
+  .dayDropZone {
+    min-height: 220px;
+  }
+
+  .daysBoard {
+    grid-auto-columns: minmax(220px, 85vw);
+  }
+
+  .readyHeader,
+  .readyDay,
+  .readyTeam {
+    grid-template-columns: 1fr;
+  }
+
+  .readyHeader {
+    flex-direction: column;
+  }
+
+  .readyDayNumber {
+    min-height: 38px;
+  }
+}

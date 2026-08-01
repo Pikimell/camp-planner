@@ -1,4 +1,5 @@
 .sidebar {
+  position: relative;
   width: 280px;
   min-width: 280px;
   min-height: 100vh;
@@ -6,6 +7,16 @@
   background: #10231d;
   border-right: 1px solid #d8dfd2;
   color: #f7faf5;
+  transition:
+    width 180ms ease,
+    min-width 180ms ease,
+    padding 180ms ease;
+}
+
+.collapsed {
+  width: 88px;
+  min-width: 88px;
+  padding: 24px 12px;
 }
 
 .brand {
@@ -14,6 +25,11 @@
   gap: 12px;
   padding: 0 8px 24px;
   border-bottom: 1px solid rgba(247, 250, 245, 0.14);
+}
+
+.collapsed .brand {
+  justify-content: center;
+  padding: 0 0 20px;
 }
 
 .brandMark {
@@ -33,6 +49,57 @@
   font-size: 18px;
   font-weight: 700;
   line-height: 1.2;
+  white-space: nowrap;
+}
+
+.collapsed .brandName {
+  display: none;
+}
+
+.toggleButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  margin-left: auto;
+  border: 1px solid rgba(247, 250, 245, 0.18);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.06);
+  color: #f7faf5;
+  cursor: pointer;
+  transition:
+    background-color 160ms ease,
+    border-color 160ms ease;
+}
+
+.toggleButton:hover {
+  border-color: rgba(247, 250, 245, 0.36);
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.toggleButton:focus-visible {
+  outline: 3px solid rgba(225, 242, 107, 0.7);
+}
+
+.collapsed .toggleButton {
+  position: absolute;
+  top: 72px;
+  left: 50%;
+  margin-left: 0;
+  transform: translateX(-50%);
+}
+
+.toggleIcon {
+  width: 10px;
+  height: 10px;
+  border-top: 2px solid currentColor;
+  border-left: 2px solid currentColor;
+  transform: rotate(-45deg);
+}
+
+.collapsed .toggleIcon {
+  transform: rotate(135deg);
 }
 
 .navigation {
@@ -42,9 +109,14 @@
   padding-top: 24px;
 }
 
+.collapsed .navigation {
+  padding-top: 52px;
+}
+
 .navLink {
   display: flex;
   align-items: center;
+  gap: 10px;
   min-height: 42px;
   padding: 10px 12px;
   border-radius: 8px;
@@ -57,9 +129,43 @@
     color 160ms ease;
 }
 
+.collapsed .navLink {
+  justify-content: center;
+  padding: 10px 8px;
+}
+
 .navLink:hover {
   background: rgba(255, 255, 255, 0.08);
   color: #ffffff;
+}
+
+.navShortLabel {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  min-width: 30px;
+  height: 30px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.08);
+  color: currentColor;
+  font-size: 12px;
+  font-weight: 900;
+  line-height: 1;
+}
+
+.navLabel {
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.collapsed .navShortLabel {
+  display: inline-flex;
+}
+
+.collapsed .navLabel {
+  display: none;
 }
 
 .activeNavLink {
@@ -82,8 +188,29 @@
     border-bottom: 1px solid #d8dfd2;
   }
 
+  .collapsed {
+    width: 100%;
+    min-width: 0;
+    padding: 16px;
+  }
+
   .brand {
     padding: 0 0 16px;
+  }
+
+  .collapsed .brand {
+    justify-content: flex-start;
+    padding: 0 0 16px;
+  }
+
+  .collapsed .brandName {
+    display: inline;
+  }
+
+  .collapsed .toggleButton {
+    position: static;
+    margin-left: auto;
+    transform: none;
   }
 
   .navigation {
@@ -91,5 +218,18 @@
     grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
     gap: 8px;
     padding-top: 16px;
+  }
+
+  .collapsed .navigation {
+    display: none;
+    padding-top: 16px;
+  }
+
+  .collapsed .navLabel {
+    display: inline;
+  }
+
+  .collapsed .navShortLabel {
+    display: none;
   }
 }

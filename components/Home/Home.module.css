@@ -35,6 +35,322 @@
   font-weight: 700;
 }
 
+.headerActions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.exportButton,
+.importButton {
+  min-height: 40px;
+  padding: 0 14px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.exportButton {
+  border: 0;
+  background: #10231d;
+  color: #ffffff;
+}
+
+.exportButton:hover {
+  background: #1d3a31;
+}
+
+.importButton {
+  border: 1px solid #d8dfd2;
+  background: #ffffff;
+  color: #10231d;
+}
+
+.importButton:hover {
+  background: #eef4ea;
+}
+
+.modalBackdrop {
+  position: fixed;
+  z-index: 20;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  background: rgba(16, 35, 29, 0.42);
+}
+
+.modal {
+  width: min(760px, 100%);
+  max-height: calc(100vh - 48px);
+  overflow: auto;
+  border-radius: 8px;
+  background: #ffffff;
+  box-shadow: 0 24px 64px rgba(16, 35, 29, 0.26);
+}
+
+.modalHeader,
+.modalFooter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 18px 20px;
+  border-bottom: 1px solid #e5ebe1;
+}
+
+.modalFooter {
+  justify-content: flex-end;
+  border-top: 1px solid #e5ebe1;
+  border-bottom: 0;
+}
+
+.modalHeader h2 {
+  color: #10231d;
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.modalCloseButton {
+  min-height: 36px;
+  padding: 0 12px;
+  border: 1px solid #d8dfd2;
+  border-radius: 8px;
+  background: #f7faf5;
+  color: #10231d;
+  font-size: 13px;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.modalCloseButton:hover {
+  background: #eef4ea;
+}
+
+.modalBody {
+  display: grid;
+  gap: 14px;
+  padding: 20px;
+  color: #42564d;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+.modalBody code {
+  color: #10231d;
+  font-weight: 800;
+}
+
+.jsonExample {
+  overflow: auto;
+  padding: 14px;
+  border: 1px solid #d8dfd2;
+  border-radius: 8px;
+  background: #f7faf5;
+  color: #10231d;
+  font-size: 13px;
+  line-height: 1.45;
+  max-height: 300px;
+}
+
+.importError,
+.importSuccess {
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.importError {
+  border: 1px solid #f0c8c8;
+  background: #fff4f4;
+  color: #9f2424;
+}
+
+.importSuccess {
+  border: 1px solid #c8dfc2;
+  background: #f0faed;
+  color: #285d2b;
+}
+
+.dateSettings {
+  max-width: 1180px;
+  padding: 22px;
+  border: 1px solid #d8dfd2;
+  border-radius: 8px;
+  background: #ffffff;
+}
+
+.dateSettingsHeader {
+  margin-bottom: 16px;
+}
+
+.dateSettingsHeader h2 {
+  color: #10231d;
+  font-size: 24px;
+  font-weight: 800;
+  line-height: 1.15;
+}
+
+.dateFields {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(220px, 1fr));
+  gap: 14px;
+}
+
+.dateField {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.dateField span {
+  color: #42564d;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.dateField input {
+  width: 100%;
+  min-height: 40px;
+  padding: 9px 10px;
+  border: 1px solid #d8dfd2;
+  border-radius: 8px;
+  background: #f7faf5;
+  color: #10231d;
+  font: inherit;
+  outline: none;
+}
+
+.dateField input:focus {
+  border-color: #6f836f;
+  background: #ffffff;
+}
+
+.dateError {
+  margin-top: 14px;
+  padding: 12px;
+  border: 1px solid #f0c8c8;
+  border-radius: 8px;
+  background: #fff4f4;
+  color: #9f2424;
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.messagesSection {
+  max-width: 1180px;
+  padding: 22px;
+  border: 1px solid #d8dfd2;
+  border-radius: 8px;
+  background: #ffffff;
+}
+
+.messagesHeader {
+  margin-bottom: 16px;
+}
+
+.messagesHeader h2 {
+  color: #10231d;
+  font-size: 24px;
+  font-weight: 800;
+  line-height: 1.15;
+}
+
+.messageList {
+  display: grid;
+  gap: 12px;
+}
+
+.messageCard {
+  display: grid;
+  width: 100%;
+  gap: 12px;
+  padding: 16px;
+  border: 1px solid #d8dfd2;
+  border-radius: 8px;
+  background: #f7faf5;
+  color: inherit;
+  cursor: pointer;
+  text-align: left;
+  transition:
+    background-color 160ms ease,
+    border-color 160ms ease,
+    transform 160ms ease;
+}
+
+.messageCard:hover {
+  border-color: #9aab9f;
+  background: #eef4ea;
+  transform: translateY(-1px);
+}
+
+.messageCard:focus-visible {
+  border-color: #10231d;
+  outline: 3px solid rgba(225, 242, 107, 0.7);
+}
+
+.messageCardTop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+}
+
+.messageTitleGroup {
+  display: inline-flex;
+  align-items: center;
+  min-width: 0;
+  gap: 10px;
+}
+
+.messageNumber {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  flex: 0 0 28px;
+  border-radius: 8px;
+  background: #e1f26b;
+  color: #10231d;
+  font-size: 13px;
+  font-weight: 900;
+  line-height: 1;
+}
+
+.messageTitle {
+  color: #10231d;
+  font-size: 17px;
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+.messageCopyState {
+  flex: 0 0 auto;
+  color: #587065;
+  font-size: 12px;
+  font-weight: 800;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.messageText {
+  display: -webkit-box;
+  overflow: hidden;
+  color: #42564d;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.55;
+  white-space: pre-line;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 5;
+}
+
 .statsGrid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
@@ -168,7 +484,23 @@
     flex-direction: column;
   }
 
+  .headerActions {
+    width: 100%;
+    align-items: stretch;
+    flex-direction: column;
+  }
+
   .title {
     font-size: 32px;
+  }
+
+  .dateFields {
+    grid-template-columns: 1fr;
+  }
+
+  .messageCardTop {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 8px;
   }
 }

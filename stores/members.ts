@@ -1,6 +1,7 @@
 import { Member } from "@/types/members";
 import { create } from "zustand";
 import { v4 as uuidv4 } from "uuid";
+import { persist } from "zustand/middleware";
 
 interface MemberStore {
   members: Member[];
@@ -11,45 +12,50 @@ interface MemberStore {
   clearMembers: () => void;
 }
 
-export const useMemberStore = create<MemberStore>()((setStore) => {
-  return {
-    members: [],
+export const useMemberStore = create<MemberStore>()(
+  persist(
+    (setStore) => {
+      return {
+        members: [],
 
-    addMember: (member) => {
-      const copy = { ...member, id: uuidv4() };
-      setStore((store) => {
-        return { members: [...store.members, copy] };
-      });
+        addMember: (member) => {
+          const copy = { ...member, id: uuidv4() };
+          setStore((store) => {
+            return { members: [...store.members, copy] };
+          });
+        },
+
+        removeMember: (id) => {
+          setStore((store) => {
+            return {
+              members: store.members.filter((member) => member.id !== id),
+            };
+          });
+        },
+
+        updateMember: (id, body) => {
+          setStore((store) => {
+            return {
+              members: store.members.map((member) => {
+                if (member.id !== id) {
+                  return member;
+                }
+
+                return { ...member, ...body, id: member.id };
+              }),
+            };
+          });
+        },
+
+        setMembers: (members) => {
+          setStore({ members });
+        },
+
+        clearMembers: () => {
+          setStore({ members: [] });
+        },
+      };
     },
-
-    removeMember: (id) => {
-      setStore((store) => {
-        return {
-          members: store.members.filter((member) => member.id !== id),
-        };
-      });
-    },
-
-    updateMember: (id, body) => {
-      setStore((store) => {
-        return {
-          members: store.members.map((member) => {
-            if (member.id !== id) {
-              return member;
-            }
-
-            return { ...member, ...body, id: member.id };
-          }),
-        };
-      });
-    },
-
-    setMembers: (members) => {
-      setStore({ members });
-    },
-
-    clearMembers: () => {
-      setStore({ members: [] });
-    },
-  };
-});
+    { name: "MemberStore" },
+  ),
+);

@@ -1,3 +1,5 @@
+import FoodDistributionManager from "@/components/FoodDistribution/FoodDistributionManager";
+
 export default function FoodDistributionPage() {
-  return null;
+  return <FoodDistributionManager />;
 }

@@ -15,7 +15,6 @@ const memberMatchesSearch = (member: Member, search: string) => {
 
   return [
     member.fullName,
-    member.groupId,
     member.gender,
     member.phoneNumber,
     member.email,
@@ -55,7 +54,8 @@ export const useMembers = () => {
   );
 
   const getMembersByGender = useCallback(
-    (gender: Gender) => store.members.filter((member) => member.gender === gender),
+    (gender: Gender) =>
+      store.members.filter((member) => member.gender === gender),
     [store.members],
   );
 
@@ -66,12 +66,17 @@ export const useMembers = () => {
 
   const searchMembers = useCallback(
     (search: string) => {
-      return sortedMembers.filter((member) => memberMatchesSearch(member, search));
+      return sortedMembers.filter((member) =>
+        memberMatchesSearch(member, search),
+      );
     },
     [sortedMembers],
   );
 
-  const hasMember = useCallback((id: string) => membersById.has(id), [membersById]);
+  const hasMember = useCallback(
+    (id: string) => membersById.has(id),
+    [membersById],
+  );
 
   return {
     members: store.members,

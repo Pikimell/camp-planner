@@ -1,4 +1,4 @@
-export type Unit = "кг" | "г" | "шт";
+export type Unit = "кг" | "г" | "шт" | "банка" | "пакетик" | "пачка";
 export type MealType = "Сніданок" | "Вечеря" | "Обід" | "Перекус";
 
 export interface Ingredient {
@@ -11,7 +11,6 @@ export interface Ingredient {
 export interface Meal {
   id: string;
   name: string;
-  type: MealType;
   notes?: string;
 }
 
@@ -26,4 +25,5 @@ export interface MealPlan {
   id: string;
   day: number;
   mealId: string;
+  mealType: MealType;
 }

@@ -1,3 +1,5 @@
+import MembersManager from "@/components/Members/MembersManager";
+
 export default function MembersPage() {
-  return null;
+  return <MembersManager />;
 }

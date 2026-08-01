@@ -1,0 +1,172 @@
+.page {
+  width: 100%;
+  min-height: 100vh;
+  padding: 32px;
+}
+
+.header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 24px;
+  max-width: 1280px;
+  margin-bottom: 28px;
+}
+
+.eyebrow {
+  margin-bottom: 8px;
+  color: #587065;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.title {
+  color: #10231d;
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 1.1;
+}
+
+.counter {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 48px;
+  height: 48px;
+  padding: 0 12px;
+  border: 1px solid #d8dfd2;
+  border-radius: 8px;
+  background: #ffffff;
+  color: #10231d;
+  font-size: 22px;
+  font-weight: 800;
+}
+
+.section {
+  max-width: 1280px;
+  padding: 22px;
+  border: 1px solid #d8dfd2;
+  border-radius: 8px;
+  background: #ffffff;
+}
+
+.sectionHeader {
+  margin-bottom: 18px;
+}
+
+.sectionHeader h2 {
+  color: #10231d;
+  font-size: 24px;
+  font-weight: 800;
+  line-height: 1.15;
+}
+
+.cardsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(520px, 1fr));
+  gap: 28px 40px;
+}
+
+.pickupCard {
+  min-width: 520px;
+  border: 3px solid #101010;
+  background: #ffffff;
+}
+
+.dutyRow {
+  min-height: 34px;
+  padding: 4px 10px;
+  border-bottom: 3px solid #101010;
+  color: #000000;
+  font-size: 18px;
+  font-weight: 900;
+  line-height: 1.25;
+  text-align: center;
+}
+
+.mealTitle {
+  min-height: 38px;
+  padding: 4px 10px;
+  border-bottom: 3px solid #101010;
+  background: #a7c8e8;
+  color: #000000;
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.pickupTable {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+.pickupTable td {
+  height: 28px;
+  padding: 2px 5px;
+  border-right: 2px solid #101010;
+  border-bottom: 2px solid #101010;
+  color: #000000;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.12;
+  vertical-align: middle;
+}
+
+.pickupTable tr:last-child td {
+  border-bottom: 0;
+}
+
+.pickupTable td:first-child {
+  width: 44%;
+  overflow: hidden;
+  text-overflow: clip;
+  white-space: nowrap;
+}
+
+.pickupTable td:nth-child(2) {
+  width: 12%;
+  font-weight: 800;
+  text-align: right;
+}
+
+.pickupTable td:last-child {
+  width: 44%;
+  border-right: 0;
+  overflow: hidden;
+}
+
+.emptyState {
+  padding: 18px;
+  border: 1px dashed #cbd7c6;
+  border-radius: 8px;
+  background: #f7faf5;
+  color: #587065;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+@media (max-width: 920px) {
+  .page {
+    padding: 20px;
+  }
+
+  .header {
+    flex-direction: column;
+  }
+
+  .title {
+    font-size: 32px;
+  }
+
+  .cardsGrid {
+    grid-template-columns: 1fr;
+    overflow-x: auto;
+  }
+
+  .pickupCard {
+    min-width: 520px;
+  }
+}

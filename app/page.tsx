@@ -1,7 +1,6 @@
+import HomeDateSettings from "@/components/Home/HomeDateSettings";
 import HomeHeader from "@/components/Home/HomeHeader";
-import HomeQuickLinks from "@/components/Home/HomeQuickLinks";
-import HomeStats from "@/components/Home/HomeStats";
-import HomeWorkflow from "@/components/Home/HomeWorkflow";
+import HomeMessages from "@/components/Home/HomeMessages";
 import css from "./page.module.css";
 
 const Page = () => {
@@ -10,9 +9,8 @@ const Page = () => {
       <HomeHeader />
 
       <div className={css["content"]}>
-        <HomeStats />
-        <HomeQuickLinks />
-        <HomeWorkflow />
+        <HomeDateSettings />
+        <HomeMessages />
       </div>
     </main>
   );

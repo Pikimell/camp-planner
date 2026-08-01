@@ -1,0 +1,1663 @@
+{
+  "exportedAt": "2026-08-01T10:25:43.445Z",
+  "version": 1,
+  "data": {
+    "settings": {
+      "startDate": "2026-08-04",
+      "endDate": "2026-08-31",
+      "startPoint": "Ясіня - Тест- Тест",
+      "endPoint": "Мукачево"
+    },
+    "members": [
+      {
+        "id": "1",
+        "fullName": "Орешников Владислав",
+        "gender": "male",
+        "teamNumber": 1
+      },
+      {
+        "id": "2",
+        "fullName": "Скуценя Данило",
+        "gender": "male",
+        "teamNumber": 1
+      },
+      {
+        "id": "3",
+        "fullName": "Зіненко Яна",
+        "gender": "female",
+        "teamNumber": 1
+      },
+      {
+        "id": "4",
+        "fullName": "Брага Катерина",
+        "gender": "female",
+        "teamNumber": 1
+      },
+      {
+        "id": "5",
+        "fullName": "Матвієнко Владислав",
+        "gender": "male",
+        "teamNumber": 1
+      },
+      {
+        "id": "6",
+        "fullName": "Серебрякова Катерина",
+        "gender": "female",
+        "teamNumber": 1
+      },
+      {
+        "id": "7",
+        "fullName": "Шеметенко Юлія",
+        "gender": "female",
+        "teamNumber": 1
+      },
+      {
+        "id": "8",
+        "fullName": "Галій Анастасія",
+        "gender": "female",
+        "teamNumber": 1
+      },
+      {
+        "id": "9",
+        "fullName": "Перекрест Антон",
+        "gender": "male",
+        "teamNumber": 1
+      },
+      {
+        "id": "10",
+        "fullName": "Харченко Таїсія",
+        "gender": "female",
+        "teamNumber": 1
+      },
+      {
+        "id": "11",
+        "fullName": "Щербинин Руслан",
+        "gender": "male",
+        "teamNumber": 1
+      },
+      {
+        "id": "12",
+        "fullName": "Козел Іван",
+        "gender": "male",
+        "teamNumber": 1
+      },
+      {
+        "id": "13",
+        "fullName": "Горпиняк Анастасія",
+        "gender": "female",
+        "teamNumber": 1
+      },
+      {
+        "id": "14",
+        "fullName": "Швець Тетяна",
+        "gender": "female",
+        "teamNumber": 1
+      },
+      {
+        "id": "15",
+        "fullName": "Помазкін Данило",
+        "gender": "male",
+        "teamNumber": 1
+      },
+      {
+        "id": "16",
+        "fullName": "Лобань Олександр",
+        "gender": "male",
+        "teamNumber": 2
+      },
+      {
+        "id": "17",
+        "fullName": "Тимчий Тарас",
+        "gender": "male",
+        "teamNumber": 2
+      },
+      {
+        "id": "18",
+        "fullName": "Мезенцева Софія",
+        "gender": "female",
+        "teamNumber": 2
+      },
+      {
+        "id": "19",
+        "fullName": "Яковишен Дмитро",
+        "gender": "male",
+        "teamNumber": 2
+      },
+      {
+        "id": "20",
+        "fullName": "Маринін Максим",
+        "gender": "male",
+        "teamNumber": 2
+      },
+      {
+        "id": "21",
+        "fullName": "Пащенко Володимир",
+        "gender": "male",
+        "teamNumber": 2
+      },
+      {
+        "id": "22",
+        "fullName": "Різник Наталія",
+        "gender": "female",
+        "teamNumber": 2
+      },
+      {
+        "id": "23",
+        "fullName": "Гуназа Катерина",
+        "gender": "female",
+        "teamNumber": 2
+      },
+      {
+        "id": "24",
+        "fullName": "Автушенко Максим",
+        "gender": "male",
+        "teamNumber": 2
+      },
+      {
+        "id": "25",
+        "fullName": "Гуназа Тетяна",
+        "gender": "female",
+        "teamNumber": 2
+      },
+      {
+        "id": "26",
+        "fullName": "Косолапова Інна",
+        "gender": "female",
+        "teamNumber": 2
+      },
+      {
+        "id": "27",
+        "fullName": "Семанишина Любов",
+        "gender": "female",
+        "teamNumber": 2
+      },
+      {
+        "id": "28",
+        "fullName": "Кот Григорій",
+        "gender": "male",
+        "teamNumber": 2
+      },
+      {
+        "id": "29",
+        "fullName": "Красовська Ксенія",
+        "gender": "female",
+        "teamNumber": 2
+      },
+      {
+        "id": "30",
+        "fullName": "Телешов Всеволод",
+        "gender": "male",
+        "teamNumber": 2
+      },
+      {
+        "id": "31",
+        "fullName": "Федоркін Микола",
+        "gender": "male",
+        "teamNumber": 2
+      }
+    ],
+    "ingredients": [
+      {
+        "id": "0f197d7f-4a52-40ff-9163-a85149fff88e",
+        "name": "Гречка",
+        "unit": "кг",
+        "weight": 1
+      },
+      {
+        "id": "83f6f356-debb-4fae-99a1-878db6dda099",
+        "name": "Рис",
+        "unit": "кг",
+        "weight": 1
+      },
+      {
+        "id": "e7d3d94b-85bb-4666-a5a9-20db76837325",
+        "name": "Макарони",
+        "unit": "кг",
+        "weight": 1
+      },
+      {
+        "id": "16d99252-e397-4265-8dfd-adbb1d70d743",
+        "name": "Булгур",
+        "unit": "кг",
+        "weight": 1
+      },
+      {
+        "id": "3ab3a6d0-82f6-4d1c-b8c0-5d0b75f690d2",
+        "name": "Пшоно",
+        "unit": "кг",
+        "weight": 1
+      },
+      {
+        "id": "0dab0d14-e3d3-48dd-8322-03d1c602951e",
+        "name": "Картопля",
+        "unit": "кг",
+        "weight": 1
+      },
+      {
+        "id": "87b6344a-6905-4a08-a75d-38311f88f2b5",
+        "name": "Лук",
+        "unit": "шт",
+        "weight": 0.1
+      },
+      {
+        "id": "630014ac-daec-492b-938c-0720f3f42153",
+        "name": "Морква",
+        "unit": "шт",
+        "weight": 0.1
+      },
+      {
+        "id": "814cbb43-5f35-47de-859d-c0e636ab1908",
+        "name": "Капуста",
+        "unit": "шт",
+        "weight": 0.5
+      },
+      {
+        "id": "797f58d1-3f75-4454-a396-9953c7cdcaba",
+        "name": "Часник",
+        "unit": "шт",
+        "weight": 0.05
+      },
+      {
+        "id": "26464db1-8fda-43cc-94d0-568c22d93daa",
+        "name": "Тушенка",
+        "unit": "банка",
+        "weight": 0.5
+      },
+      {
+        "id": "2662ac67-6144-4ee9-8c24-d632487f80a4",
+        "name": "Скумбрія",
+        "unit": "шт",
+        "weight": 0.5
+      },
+      {
+        "id": "fd7368f2-6cc0-4508-a33e-c4da4cd297d6",
+        "name": "Перець горошком",
+        "unit": "пачка",
+        "weight": 0.01
+      },
+      {
+        "id": "9f49fe17-b4c3-4d76-8f75-3f4f97f40c2d",
+        "name": "Перець чорний",
+        "unit": "пачка",
+        "weight": 0.01
+      },
+      {
+        "id": "b0009724-ed6f-473f-b2d7-83defe07fb98",
+        "name": "Томат трикутничком",
+        "unit": "пакетик",
+        "weight": 0.07
+      },
+      {
+        "id": "779e0c47-6faf-4694-a6df-bce324db540d",
+        "name": "Заправка для борща",
+        "unit": "пакетик",
+        "weight": 0.1
+      },
+      {
+        "id": "7f611d3e-09a6-4f12-b84e-d285da31875f",
+        "name": "Сіль",
+        "unit": "кг",
+        "weight": 1
+      },
+      {
+        "id": "47af9f55-cb1e-40bc-a5d8-1d2e77b78a8d",
+        "name": "Лавровий лист",
+        "unit": "пачка",
+        "weight": 0.02
+      },
+      {
+        "id": "2fd1733c-8cbb-4f80-8bc4-dbe5cf3377fd",
+        "name": "Приправа 10 овочів",
+        "unit": "пачка",
+        "weight": 0.075
+      },
+      {
+        "id": "4bc3c6f0-b5d5-4ef2-9167-36e11f1c91cb",
+        "name": "Приправа для плову",
+        "unit": "пачка",
+        "weight": 0.03
+      },
+      {
+        "id": "fdd7f72d-fcc5-4565-a3dc-0e97c3d3914a",
+        "name": "Приправа для ухи",
+        "unit": "пачка",
+        "weight": 0.03
+      },
+      {
+        "id": "93d62f40-c15d-4a73-88f6-bb28af92ef64",
+        "name": "Хмелі-сунелі",
+        "unit": "пачка",
+        "weight": 0.03
+      }
+    ],
+    "meals": [
+      {
+        "id": "ad397e66-4285-41b4-b4e1-4d3bca4c8a94",
+        "name": "Борщ",
+        "notes": ""
+      },
+      {
+        "id": "adedbd74-6ecb-4f2c-9d2b-1b6f7dd46b8b",
+        "name": "Макарони",
+        "notes": ""
+      },
+      {
+        "id": "65378277-ab3a-4af9-b39a-7f068b10a0cf",
+        "name": "Плов",
+        "notes": ""
+      },
+      {
+        "id": "e1b52c5f-dc38-49b3-b007-8dca520c18e9",
+        "name": "Гречка",
+        "notes": ""
+      },
+      {
+        "id": "3a7a2fad-82da-474f-9811-ec8002532db6",
+        "name": "Уха",
+        "notes": ""
+      },
+      {
+        "id": "7945d13f-b76b-4a05-bd20-658cad926c79",
+        "name": "Булгур",
+        "notes": ""
+      },
+      {
+        "id": "1b8b7602-21d2-493b-bc2d-95c33e117f9b",
+        "name": "Харчо",
+        "notes": ""
+      }
+    ],
+    "mealIngredients": [
+      {
+        "id": "mi-001",
+        "mealId": "ad397e66-4285-41b4-b4e1-4d3bca4c8a94",
+        "ingredientId": "0dab0d14-e3d3-48dd-8322-03d1c602951e",
+        "amount": 1
+      },
+      {
+        "id": "mi-002",
+        "mealId": "ad397e66-4285-41b4-b4e1-4d3bca4c8a94",
+        "ingredientId": "87b6344a-6905-4a08-a75d-38311f88f2b5",
+        "amount": 2
+      },
+      {
+        "id": "mi-003",
+        "mealId": "ad397e66-4285-41b4-b4e1-4d3bca4c8a94",
+        "ingredientId": "630014ac-daec-492b-938c-0720f3f42153",
+        "amount": 1
+      },
+      {
+        "id": "mi-004",
+        "mealId": "ad397e66-4285-41b4-b4e1-4d3bca4c8a94",
+        "ingredientId": "814cbb43-5f35-47de-859d-c0e636ab1908",
+        "amount": 1
+      },
+      {
+        "id": "mi-005",
+        "mealId": "ad397e66-4285-41b4-b4e1-4d3bca4c8a94",
+        "ingredientId": "26464db1-8fda-43cc-94d0-568c22d93daa",
+        "amount": 2
+      },
+      {
+        "id": "mi-006",
+        "mealId": "ad397e66-4285-41b4-b4e1-4d3bca4c8a94",
+        "ingredientId": "fd7368f2-6cc0-4508-a33e-c4da4cd297d6",
+        "amount": 1
+      },
+      {
+        "id": "mi-007",
+        "mealId": "ad397e66-4285-41b4-b4e1-4d3bca4c8a94",
+        "ingredientId": "b0009724-ed6f-473f-b2d7-83defe07fb98",
+        "amount": 3
+      },
+      {
+        "id": "mi-008",
+        "mealId": "ad397e66-4285-41b4-b4e1-4d3bca4c8a94",
+        "ingredientId": "779e0c47-6faf-4694-a6df-bce324db540d",
+        "amount": 2
+      },
+      {
+        "id": "mi-009",
+        "mealId": "ad397e66-4285-41b4-b4e1-4d3bca4c8a94",
+        "ingredientId": "7f611d3e-09a6-4f12-b84e-d285da31875f",
+        "amount": 1
+      },
+      {
+        "id": "mi-010",
+        "mealId": "ad397e66-4285-41b4-b4e1-4d3bca4c8a94",
+        "ingredientId": "47af9f55-cb1e-40bc-a5d8-1d2e77b78a8d",
+        "amount": 1
+      },
+      {
+        "id": "mi-011",
+        "mealId": "ad397e66-4285-41b4-b4e1-4d3bca4c8a94",
+        "ingredientId": "9f49fe17-b4c3-4d76-8f75-3f4f97f40c2d",
+        "amount": 1
+      },
+      {
+        "id": "mi-012",
+        "mealId": "adedbd74-6ecb-4f2c-9d2b-1b6f7dd46b8b",
+        "ingredientId": "e7d3d94b-85bb-4666-a5a9-20db76837325",
+        "amount": 2
+      },
+      {
+        "id": "mi-013",
+        "mealId": "adedbd74-6ecb-4f2c-9d2b-1b6f7dd46b8b",
+        "ingredientId": "87b6344a-6905-4a08-a75d-38311f88f2b5",
+        "amount": 1
+      },
+      {
+        "id": "mi-014",
+        "mealId": "adedbd74-6ecb-4f2c-9d2b-1b6f7dd46b8b",
+        "ingredientId": "630014ac-daec-492b-938c-0720f3f42153",
+        "amount": 1
+      },
+      {
+        "id": "mi-015",
+        "mealId": "adedbd74-6ecb-4f2c-9d2b-1b6f7dd46b8b",
+        "ingredientId": "26464db1-8fda-43cc-94d0-568c22d93daa",
+        "amount": 2
+      },
+      {
+        "id": "mi-016",
+        "mealId": "adedbd74-6ecb-4f2c-9d2b-1b6f7dd46b8b",
+        "ingredientId": "7f611d3e-09a6-4f12-b84e-d285da31875f",
+        "amount": 1
+      },
+      {
+        "id": "mi-017",
+        "mealId": "adedbd74-6ecb-4f2c-9d2b-1b6f7dd46b8b",
+        "ingredientId": "2fd1733c-8cbb-4f80-8bc4-dbe5cf3377fd",
+        "amount": 1
+      },
+      {
+        "id": "mi-018",
+        "mealId": "65378277-ab3a-4af9-b39a-7f068b10a0cf",
+        "ingredientId": "83f6f356-debb-4fae-99a1-878db6dda099",
+        "amount": 1.5
+      },
+      {
+        "id": "mi-019",
+        "mealId": "65378277-ab3a-4af9-b39a-7f068b10a0cf",
+        "ingredientId": "87b6344a-6905-4a08-a75d-38311f88f2b5",
+        "amount": 1
+      },
+      {
+        "id": "mi-020",
+        "mealId": "65378277-ab3a-4af9-b39a-7f068b10a0cf",
+        "ingredientId": "630014ac-daec-492b-938c-0720f3f42153",
+        "amount": 1
+      },
+      {
+        "id": "mi-021",
+        "mealId": "65378277-ab3a-4af9-b39a-7f068b10a0cf",
+        "ingredientId": "26464db1-8fda-43cc-94d0-568c22d93daa",
+        "amount": 2
+      },
+      {
+        "id": "mi-022",
+        "mealId": "65378277-ab3a-4af9-b39a-7f068b10a0cf",
+        "ingredientId": "797f58d1-3f75-4454-a396-9953c7cdcaba",
+        "amount": 1
+      },
+      {
+        "id": "mi-023",
+        "mealId": "65378277-ab3a-4af9-b39a-7f068b10a0cf",
+        "ingredientId": "7f611d3e-09a6-4f12-b84e-d285da31875f",
+        "amount": 1
+      },
+      {
+        "id": "mi-024",
+        "mealId": "65378277-ab3a-4af9-b39a-7f068b10a0cf",
+        "ingredientId": "47af9f55-cb1e-40bc-a5d8-1d2e77b78a8d",
+        "amount": 1
+      },
+      {
+        "id": "mi-025",
+        "mealId": "65378277-ab3a-4af9-b39a-7f068b10a0cf",
+        "ingredientId": "4bc3c6f0-b5d5-4ef2-9167-36e11f1c91cb",
+        "amount": 1
+      },
+      {
+        "id": "mi-026",
+        "mealId": "65378277-ab3a-4af9-b39a-7f068b10a0cf",
+        "ingredientId": "9f49fe17-b4c3-4d76-8f75-3f4f97f40c2d",
+        "amount": 1
+      },
+      {
+        "id": "mi-027",
+        "mealId": "e1b52c5f-dc38-49b3-b007-8dca520c18e9",
+        "ingredientId": "0f197d7f-4a52-40ff-9163-a85149fff88e",
+        "amount": 2
+      },
+      {
+        "id": "mi-028",
+        "mealId": "e1b52c5f-dc38-49b3-b007-8dca520c18e9",
+        "ingredientId": "87b6344a-6905-4a08-a75d-38311f88f2b5",
+        "amount": 1
+      },
+      {
+        "id": "mi-029",
+        "mealId": "e1b52c5f-dc38-49b3-b007-8dca520c18e9",
+        "ingredientId": "630014ac-daec-492b-938c-0720f3f42153",
+        "amount": 1
+      },
+      {
+        "id": "mi-030",
+        "mealId": "e1b52c5f-dc38-49b3-b007-8dca520c18e9",
+        "ingredientId": "26464db1-8fda-43cc-94d0-568c22d93daa",
+        "amount": 2
+      },
+      {
+        "id": "mi-031",
+        "mealId": "e1b52c5f-dc38-49b3-b007-8dca520c18e9",
+        "ingredientId": "7f611d3e-09a6-4f12-b84e-d285da31875f",
+        "amount": 1
+      },
+      {
+        "id": "mi-032",
+        "mealId": "e1b52c5f-dc38-49b3-b007-8dca520c18e9",
+        "ingredientId": "2fd1733c-8cbb-4f80-8bc4-dbe5cf3377fd",
+        "amount": 1
+      },
+      {
+        "id": "mi-033",
+        "mealId": "3a7a2fad-82da-474f-9811-ec8002532db6",
+        "ingredientId": "0dab0d14-e3d3-48dd-8322-03d1c602951e",
+        "amount": 1
+      },
+      {
+        "id": "mi-034",
+        "mealId": "3a7a2fad-82da-474f-9811-ec8002532db6",
+        "ingredientId": "87b6344a-6905-4a08-a75d-38311f88f2b5",
+        "amount": 2
+      },
+      {
+        "id": "mi-035",
+        "mealId": "3a7a2fad-82da-474f-9811-ec8002532db6",
+        "ingredientId": "630014ac-daec-492b-938c-0720f3f42153",
+        "amount": 1
+      },
+      {
+        "id": "mi-036",
+        "mealId": "3a7a2fad-82da-474f-9811-ec8002532db6",
+        "ingredientId": "2662ac67-6144-4ee9-8c24-d632487f80a4",
+        "amount": 5
+      },
+      {
+        "id": "mi-037",
+        "mealId": "3a7a2fad-82da-474f-9811-ec8002532db6",
+        "ingredientId": "fd7368f2-6cc0-4508-a33e-c4da4cd297d6",
+        "amount": 1
+      },
+      {
+        "id": "mi-038",
+        "mealId": "3a7a2fad-82da-474f-9811-ec8002532db6",
+        "ingredientId": "7f611d3e-09a6-4f12-b84e-d285da31875f",
+        "amount": 1
+      },
+      {
+        "id": "mi-039",
+        "mealId": "3a7a2fad-82da-474f-9811-ec8002532db6",
+        "ingredientId": "47af9f55-cb1e-40bc-a5d8-1d2e77b78a8d",
+        "amount": 1
+      },
+      {
+        "id": "mi-040",
+        "mealId": "3a7a2fad-82da-474f-9811-ec8002532db6",
+        "ingredientId": "fdd7f72d-fcc5-4565-a3dc-0e97c3d3914a",
+        "amount": 1
+      },
+      {
+        "id": "mi-041",
+        "mealId": "3a7a2fad-82da-474f-9811-ec8002532db6",
+        "ingredientId": "9f49fe17-b4c3-4d76-8f75-3f4f97f40c2d",
+        "amount": 1
+      },
+      {
+        "id": "mi-042",
+        "mealId": "3a7a2fad-82da-474f-9811-ec8002532db6",
+        "ingredientId": "3ab3a6d0-82f6-4d1c-b8c0-5d0b75f690d2",
+        "amount": 1
+      },
+      {
+        "id": "mi-043",
+        "mealId": "7945d13f-b76b-4a05-bd20-658cad926c79",
+        "ingredientId": "16d99252-e397-4265-8dfd-adbb1d70d743",
+        "amount": 2
+      },
+      {
+        "id": "mi-044",
+        "mealId": "7945d13f-b76b-4a05-bd20-658cad926c79",
+        "ingredientId": "87b6344a-6905-4a08-a75d-38311f88f2b5",
+        "amount": 1
+      },
+      {
+        "id": "mi-045",
+        "mealId": "7945d13f-b76b-4a05-bd20-658cad926c79",
+        "ingredientId": "630014ac-daec-492b-938c-0720f3f42153",
+        "amount": 1
+      },
+      {
+        "id": "mi-046",
+        "mealId": "7945d13f-b76b-4a05-bd20-658cad926c79",
+        "ingredientId": "26464db1-8fda-43cc-94d0-568c22d93daa",
+        "amount": 2
+      },
+      {
+        "id": "mi-047",
+        "mealId": "7945d13f-b76b-4a05-bd20-658cad926c79",
+        "ingredientId": "7f611d3e-09a6-4f12-b84e-d285da31875f",
+        "amount": 1
+      },
+      {
+        "id": "mi-048",
+        "mealId": "7945d13f-b76b-4a05-bd20-658cad926c79",
+        "ingredientId": "2fd1733c-8cbb-4f80-8bc4-dbe5cf3377fd",
+        "amount": 1
+      },
+      {
+        "id": "mi-049",
+        "mealId": "1b8b7602-21d2-493b-bc2d-95c33e117f9b",
+        "ingredientId": "83f6f356-debb-4fae-99a1-878db6dda099",
+        "amount": 1
+      },
+      {
+        "id": "mi-050",
+        "mealId": "1b8b7602-21d2-493b-bc2d-95c33e117f9b",
+        "ingredientId": "0dab0d14-e3d3-48dd-8322-03d1c602951e",
+        "amount": 1
+      },
+      {
+        "id": "mi-051",
+        "mealId": "1b8b7602-21d2-493b-bc2d-95c33e117f9b",
+        "ingredientId": "87b6344a-6905-4a08-a75d-38311f88f2b5",
+        "amount": 1
+      },
+      {
+        "id": "mi-052",
+        "mealId": "1b8b7602-21d2-493b-bc2d-95c33e117f9b",
+        "ingredientId": "630014ac-daec-492b-938c-0720f3f42153",
+        "amount": 1
+      },
+      {
+        "id": "mi-053",
+        "mealId": "1b8b7602-21d2-493b-bc2d-95c33e117f9b",
+        "ingredientId": "26464db1-8fda-43cc-94d0-568c22d93daa",
+        "amount": 2
+      },
+      {
+        "id": "mi-054",
+        "mealId": "1b8b7602-21d2-493b-bc2d-95c33e117f9b",
+        "ingredientId": "797f58d1-3f75-4454-a396-9953c7cdcaba",
+        "amount": 1
+      },
+      {
+        "id": "mi-055",
+        "mealId": "1b8b7602-21d2-493b-bc2d-95c33e117f9b",
+        "ingredientId": "7f611d3e-09a6-4f12-b84e-d285da31875f",
+        "amount": 1
+      },
+      {
+        "id": "mi-056",
+        "mealId": "1b8b7602-21d2-493b-bc2d-95c33e117f9b",
+        "ingredientId": "47af9f55-cb1e-40bc-a5d8-1d2e77b78a8d",
+        "amount": 1
+      },
+      {
+        "id": "mi-057",
+        "mealId": "1b8b7602-21d2-493b-bc2d-95c33e117f9b",
+        "ingredientId": "93d62f40-c15d-4a73-88f6-bb28af92ef64",
+        "amount": 1
+      },
+      {
+        "id": "mi-058",
+        "mealId": "1b8b7602-21d2-493b-bc2d-95c33e117f9b",
+        "ingredientId": "9f49fe17-b4c3-4d76-8f75-3f4f97f40c2d",
+        "amount": 1
+      },
+      {
+        "id": "mi-059",
+        "mealId": "1b8b7602-21d2-493b-bc2d-95c33e117f9b",
+        "ingredientId": "b0009724-ed6f-473f-b2d7-83defe07fb98",
+        "amount": 2
+      }
+    ],
+    "mealPlans": [
+      {
+        "id": "mp-001",
+        "day": 1,
+        "mealId": "ad397e66-4285-41b4-b4e1-4d3bca4c8a94",
+        "mealType": "Вечеря"
+      },
+      {
+        "id": "mp-002",
+        "day": 2,
+        "mealId": "adedbd74-6ecb-4f2c-9d2b-1b6f7dd46b8b",
+        "mealType": "Сніданок"
+      },
+      {
+        "id": "mp-003",
+        "day": 2,
+        "mealId": "65378277-ab3a-4af9-b39a-7f068b10a0cf",
+        "mealType": "Вечеря"
+      },
+      {
+        "id": "mp-004",
+        "day": 3,
+        "mealId": "e1b52c5f-dc38-49b3-b007-8dca520c18e9",
+        "mealType": "Сніданок"
+      },
+      {
+        "id": "mp-005",
+        "day": 3,
+        "mealId": "3a7a2fad-82da-474f-9811-ec8002532db6",
+        "mealType": "Вечеря"
+      },
+      {
+        "id": "mp-006",
+        "day": 4,
+        "mealId": "7945d13f-b76b-4a05-bd20-658cad926c79",
+        "mealType": "Сніданок"
+      },
+      {
+        "id": "mp-007",
+        "day": 4,
+        "mealId": "65378277-ab3a-4af9-b39a-7f068b10a0cf",
+        "mealType": "Вечеря"
+      },
+      {
+        "id": "mp-008",
+        "day": 5,
+        "mealId": "adedbd74-6ecb-4f2c-9d2b-1b6f7dd46b8b",
+        "mealType": "Сніданок"
+      },
+      {
+        "id": "mp-009",
+        "day": 5,
+        "mealId": "1b8b7602-21d2-493b-bc2d-95c33e117f9b",
+        "mealType": "Вечеря"
+      },
+      {
+        "id": "mp-010",
+        "day": 6,
+        "mealId": "e1b52c5f-dc38-49b3-b007-8dca520c18e9",
+        "mealType": "Сніданок"
+      }
+    ],
+    "dutySchedules": [
+      {
+        "id": "ds-001",
+        "day": 1,
+        "memberIds": ["12", "14", "13"]
+      },
+      {
+        "id": "ds-002",
+        "day": 2,
+        "memberIds": ["6", "7", "11"]
+      },
+      {
+        "id": "ds-003",
+        "day": 3,
+        "memberIds": ["2", "9", "4"]
+      },
+      {
+        "id": "ds-004",
+        "day": 4,
+        "memberIds": ["3", "1", "8"]
+      },
+      {
+        "id": "ds-005",
+        "day": 5,
+        "memberIds": ["5", "10"]
+      },
+      {
+        "id": "ds-006",
+        "day": 6,
+        "memberIds": ["15", "12", "14"]
+      }
+    ],
+    "foodAssignments": [
+      {
+        "id": "fa-001",
+        "mealPlanId": "mp-001",
+        "ingredientId": "0dab0d14-e3d3-48dd-8322-03d1c602951e",
+        "memberId": "8",
+        "totalAmount": 1,
+        "currentAmount": 0
+      },
+      {
+        "id": "fa-002",
+        "mealPlanId": "mp-001",
+        "ingredientId": "87b6344a-6905-4a08-a75d-38311f88f2b5",
+        "memberId": "4",
+        "totalAmount": 1,
+        "currentAmount": 0
+      },
+      {
+        "id": "fa-003",
+        "mealPlanId": "mp-001",
+        "ingredientId": "87b6344a-6905-4a08-a75d-38311f88f2b5",
+        "memberId": "3",
+        "totalAmount": 1,
+        "currentAmount": 0
+      },
+      {
+        "id": "fa-004",
+        "mealPlanId": "mp-001",
+        "ingredientId": "630014ac-daec-492b-938c-0720f3f42153",
+        "memberId": "7",
+        "totalAmount": 1,
+        "currentAmount": 0
+      },
+      {
+        "id": "fa-005",
+        "mealPlanId": "mp-001",
+        "ingredientId": "814cbb43-5f35-47de-859d-c0e636ab1908",
+        "memberId": "1",
+        "totalAmount": 1,
+        "currentAmount": 0
+      },
+      {
+        "id": "fa-006",
+        "mealPlanId": "mp-001",
+        "ingredientId": "26464db1-8fda-43cc-94d0-568c22d93daa",
+        "memberId": "6",
+        "totalAmount": 1,
+        "currentAmount": 0
+      },
+      {
+        "id": "fa-007",
+        "mealPlanId": "mp-001",
+        "ingredientId": "26464db1-8fda-43cc-94d0-568c22d93daa",
+        "memberId": "7",
+        "totalAmount": 1,
+        "currentAmount": 0
+      },
+      {
+        "id": "fa-008",
+        "mealPlanId": "mp-001",
+        "ingredientId": "fd7368f2-6cc0-4508-a33e-c4da4cd297d6",
+        "memberId": "11",
+        "totalAmount": 1,
+        "currentAmount": 0
+      },
+      {
+        "id": "fa-009",
+        "mealPlanId": "mp-001",
+        "ingredientId": "b0009724-ed6f-473f-b2d7-83defe07fb98",
+        "memberId": "7",
+        "totalAmount": 2,
+        "currentAmount": 0
+      },
+      {
+        "id": "fa-010",
+        "mealPlanId": "mp-001",
+        "ingredientId": "b0009724-ed6f-473f-b2d7-83defe07fb98",
+        "memberId": "11",
+        "totalAmount": 1,
+        "currentAmount": 0
+      },
+      {
+        "id": "fa-011",
+        "mealPlanId": "mp-001",
+        "ingredientId": "779e0c47-6faf-4694-a6df-bce324db540d",
+        "memberId": "6",
+        "totalAmount": 1,
+        "currentAmount": 0
+      },
+      {
+        "id": "fa-012",
+        "mealPlanId": "mp-001",
+        "ingredientId": "779e0c47-6faf-4694-a6df-bce324db540d",
+        "memberId": "10",
+        "totalAmount": 1,
+        "currentAmount": 0
+      },
+      {
+        "id": "fa-013",
+        "mealPlanId": "mp-001",
+        "ingredientId": "7f611d3e-09a6-4f12-b84e-d285da31875f",
+        "memberId": "9",
+        "totalAmount": 1,
+        "currentAmount": 0
+      },
+      {
+        "id": "fa-014",
+        "mealPlanId": "mp-001",
+        "ingredientId": "47af9f55-cb1e-40bc-a5d8-1d2e77b78a8d",
+        "memberId": "4",
+        "totalAmount": 1,
+        "currentAmount": 0
+      },
+      {
+        "id": "fa-015",
+        "mealPlanId": "mp-001",
+        "ingredientId": "9f49fe17-b4c3-4d76-8f75-3f4f97f40c2d",
+        "memberId": "12",
+        "totalAmount": 1,
+        "currentAmount": 0
+      },
+
+      {
+        "id": "fa-016",
+        "mealPlanId": "mp-002",
+        "ingredientId": "e7d3d94b-85bb-4666-a5a9-20db76837325",
+        "memberId": "4",
+        "totalAmount": 1,
+        "currentAmount": 0
+      },
+      {
+        "id": "fa-017",
+        "mealPlanId": "mp-002",
+        "ingredientId": "e7d3d94b-85bb-4666-a5a9-20db76837325",
+        "memberId": "3",
+        "totalAmount": 1,
+        "currentAmount": 0
+      },
+      {
+        "id": "fa-018",
+        "mealPlanId": "mp-002",
+        "ingredientId": "87b6344a-6905-4a08-a75d-38311f88f2b5",
+        "memberId": "6",
+        "totalAmount": 1,
+        "currentAmount": 0
+      },
+      {
+        "id": "fa-019",
+        "mealPlanId": "mp-002",
+        "ingredientId": "630014ac-daec-492b-938c-0720f3f42153",
+        "memberId": "11",
+        "totalAmount": 1,
+        "currentAmount": 0
+      },
+      {
+        "id": "fa-020",
+        "mealPlanId": "mp-002",
+        "ingredientId": "26464db1-8fda-43cc-94d0-568c22d93daa",
+        "memberId": "13",
+        "totalAmount": 1,
+        "currentAmount": 0
+      },
+      {
+        "id": "fa-021",
+        "mealPlanId": "mp-002",
+        "ingredientId": "26464db1-8fda-43cc-94d0-568c22d93daa",
+        "memberId": "14",
+        "totalAmount": 1,
+        "currentAmount": 0
+      },
+      {
+        "id": "fa-022",
+        "mealPlanId": "mp-002",
+        "ingredientId": "7f611d3e-09a6-4f12-b84e-d285da31875f",
+        "memberId": "9",
+        "totalAmount": 1,
+        "currentAmount": 0
+      },
+      {
+        "id": "fa-023",
+        "mealPlanId": "mp-002",
+        "ingredientId": "2fd1733c-8cbb-4f80-8bc4-dbe5cf3377fd",
+        "memberId": "14",
+        "totalAmount": 1,
+        "currentAmount": 0
+      },
+
+      {
+        "id": "fa-024",
+        "mealPlanId": "mp-003",
+        "ingredientId": "83f6f356-debb-4fae-99a1-878db6dda099",
+        "memberId": "2",
+        "totalAmount": 1,
+        "currentAmount": 0
+      },
+      {
+        "id": "fa-025",
+        "mealPlanId": "mp-003",
+        "ingredientId": "83f6f356-debb-4fae-99a1-878db6dda099",
+        "memberId": "5",
+        "totalAmount": 0.5,
+        "currentAmount": 0
+      },
+      {
+        "id": "fa-026",
+        "mealPlanId": "mp-003",
+        "ingredientId": "87b6344a-6905-4a08-a75d-38311f88f2b5",
+        "memberId": "10",
+        "totalAmount": 1,
+        "currentAmount": 0
+      },
+      {
+        "id": "fa-027",
+        "mealPlanId": "mp-003",
+        "ingredientId": "630014ac-daec-492b-938c-0720f3f42153",
+        "memberId": "11",
+        "totalAmount": 1,
+        "currentAmount": 0
+      },
+      {
+        "id": "fa-028",
+        "mealPlanId": "mp-003",
+        "ingredientId": "26464db1-8fda-43cc-94d0-568c22d93daa",
+        "memberId": "5",
+        "totalAmount": 1,
+        "currentAmount": 0
+      },
+      {
+        "id": "fa-029",
+        "mealPlanId": "mp-003",
+        "ingredientId": "26464db1-8fda-43cc-94d0-568c22d93daa",
+        "memberId": "3",
+        "totalAmount": 1,
+        "currentAmount": 0
+      },
+      {
+        "id": "fa-030",
+        "mealPlanId": "mp-003",
+        "ingredientId": "7f611d3e-09a6-4f12-b84e-d285da31875f",
+        "memberId": "9",
+        "totalAmount": 1,
+        "currentAmount": 0
+      },
+      {
+        "id": "fa-031",
+        "mealPlanId": "mp-003",
+        "ingredientId": "2fd1733c-8cbb-4f80-8bc4-dbe5cf3377fd",
+        "memberId": "8",
+        "totalAmount": 1,
+        "currentAmount": 0
+      },
+      {
+        "id": "fa-032",
+        "mealPlanId": "mp-003",
+        "ingredientId": "47af9f55-cb1e-40bc-a5d8-1d2e77b78a8d",
+        "memberId": "5",
+        "totalAmount": 1,
+        "currentAmount": 0
+      },
+      {
+        "id": "fa-033",
+        "mealPlanId": "mp-003",
+        "ingredientId": "4bc3c6f0-b5d5-4ef2-9167-36e11f1c91cb",
+        "memberId": "5",
+        "totalAmount": 1,
+        "currentAmount": 0
+      },
+      {
+        "id": "fa-034",
+        "mealPlanId": "mp-003",
+        "ingredientId": "9f49fe17-b4c3-4d76-8f75-3f4f97f40c2d",
+        "memberId": "12",
+        "totalAmount": 1,
+        "currentAmount": 0
+      },
+      {
+        "id": "fa-035",
+        "mealPlanId": "mp-004",
+        "ingredientId": "0f197d7f-4a52-40ff-9163-a85149fff88e",
+        "memberId": "6",
+        "totalAmount": 1,
+        "currentAmount": 0
+      },
+      {
+        "id": "fa-036",
+        "mealPlanId": "mp-004",
+        "ingredientId": "0f197d7f-4a52-40ff-9163-a85149fff88e",
+        "memberId": "13",
+        "totalAmount": 1,
+        "currentAmount": 0
+      },
+      {
+        "id": "fa-037",
+        "mealPlanId": "mp-004",
+        "ingredientId": "87b6344a-6905-4a08-a75d-38311f88f2b5",
+        "memberId": "10",
+        "totalAmount": 1,
+        "currentAmount": 0
+      },
+      {
+        "id": "fa-038",
+        "mealPlanId": "mp-004",
+        "ingredientId": "630014ac-daec-492b-938c-0720f3f42153",
+        "memberId": "11",
+        "totalAmount": 1,
+        "currentAmount": 0
+      },
+      {
+        "id": "fa-039",
+        "mealPlanId": "mp-004",
+        "ingredientId": "26464db1-8fda-43cc-94d0-568c22d93daa",
+        "memberId": "5",
+        "totalAmount": 1,
+        "currentAmount": 0
+      },
+      {
+        "id": "fa-040",
+        "mealPlanId": "mp-004",
+        "ingredientId": "26464db1-8fda-43cc-94d0-568c22d93daa",
+        "memberId": "3",
+        "totalAmount": 1,
+        "currentAmount": 0
+      },
+      {
+        "id": "fa-041",
+        "mealPlanId": "mp-004",
+        "ingredientId": "7f611d3e-09a6-4f12-b84e-d285da31875f",
+        "memberId": "9",
+        "totalAmount": 1,
+        "currentAmount": 0
+      },
+      {
+        "id": "fa-042",
+        "mealPlanId": "mp-004",
+        "ingredientId": "2fd1733c-8cbb-4f80-8bc4-dbe5cf3377fd",
+        "memberId": "8",
+        "totalAmount": 1,
+        "currentAmount": 0
+      },
+      {
+        "id": "fa-043",
+        "mealPlanId": "mp-004",
+        "ingredientId": "47af9f55-cb1e-40bc-a5d8-1d2e77b78a8d",
+        "memberId": "5",
+        "totalAmount": 1,
+        "currentAmount": 0
+      },
+
+      {
+        "id": "fa-044",
+        "mealPlanId": "mp-005",
+        "ingredientId": "0dab0d14-e3d3-48dd-8322-03d1c602951e",
+        "memberId": "2",
+        "totalAmount": 1,
+        "currentAmount": 0
+      },
+      {
+        "id": "fa-045",
+        "mealPlanId": "mp-005",
+        "ingredientId": "87b6344a-6905-4a08-a75d-38311f88f2b5",
+        "memberId": "13",
+        "totalAmount": 1,
+        "currentAmount": 0
+      },
+      {
+        "id": "fa-046",
+        "mealPlanId": "mp-005",
+        "ingredientId": "87b6344a-6905-4a08-a75d-38311f88f2b5",
+        "memberId": "14",
+        "totalAmount": 1,
+        "currentAmount": 0
+      },
+      {
+        "id": "fa-047",
+        "mealPlanId": "mp-005",
+        "ingredientId": "630014ac-daec-492b-938c-0720f3f42153",
+        "memberId": "11",
+        "totalAmount": 1,
+        "currentAmount": 0
+      },
+      {
+        "id": "fa-048",
+        "mealPlanId": "mp-005",
+        "ingredientId": "2662ac67-6144-4ee9-8c24-d632487f80a4",
+        "memberId": "1",
+        "totalAmount": 1,
+        "currentAmount": 0
+      },
+      {
+        "id": "fa-049",
+        "mealPlanId": "mp-005",
+        "ingredientId": "2662ac67-6144-4ee9-8c24-d632487f80a4",
+        "memberId": "5",
+        "totalAmount": 1,
+        "currentAmount": 0
+      },
+      {
+        "id": "fa-050",
+        "mealPlanId": "mp-005",
+        "ingredientId": "2662ac67-6144-4ee9-8c24-d632487f80a4",
+        "memberId": "9",
+        "totalAmount": 1,
+        "currentAmount": 0
+      },
+      {
+        "id": "fa-051",
+        "mealPlanId": "mp-005",
+        "ingredientId": "2662ac67-6144-4ee9-8c24-d632487f80a4",
+        "memberId": "12",
+        "totalAmount": 1,
+        "currentAmount": 0
+      },
+      {
+        "id": "fa-052",
+        "mealPlanId": "mp-005",
+        "ingredientId": "fd7368f2-6cc0-4508-a33e-c4da4cd297d6",
+        "memberId": "11",
+        "totalAmount": 1,
+        "currentAmount": 0
+      },
+      {
+        "id": "fa-053",
+        "mealPlanId": "mp-005",
+        "ingredientId": "7f611d3e-09a6-4f12-b84e-d285da31875f",
+        "memberId": "9",
+        "totalAmount": 1,
+        "currentAmount": 0
+      },
+      {
+        "id": "fa-054",
+        "mealPlanId": "mp-005",
+        "ingredientId": "47af9f55-cb1e-40bc-a5d8-1d2e77b78a8d",
+        "memberId": "9",
+        "totalAmount": 1,
+        "currentAmount": 0
+      },
+      {
+        "id": "fa-055",
+        "mealPlanId": "mp-005",
+        "ingredientId": "fdd7f72d-fcc5-4565-a3dc-0e97c3d3914a",
+        "memberId": "12",
+        "totalAmount": 1,
+        "currentAmount": 0
+      },
+      {
+        "id": "fa-056",
+        "mealPlanId": "mp-005",
+        "ingredientId": "9f49fe17-b4c3-4d76-8f75-3f4f97f40c2d",
+        "memberId": "12",
+        "totalAmount": 1,
+        "currentAmount": 0
+      },
+      {
+        "id": "fa-057",
+        "mealPlanId": "mp-006",
+        "ingredientId": "16d99252-e397-4265-8dfd-adbb1d70d743",
+        "memberId": "7",
+        "totalAmount": 1,
+        "currentAmount": 0
+      },
+      {
+        "id": "fa-058",
+        "mealPlanId": "mp-006",
+        "ingredientId": "16d99252-e397-4265-8dfd-adbb1d70d743",
+        "memberId": "16",
+        "totalAmount": 1,
+        "currentAmount": 0
+      },
+      {
+        "id": "fa-059",
+        "mealPlanId": "mp-006",
+        "ingredientId": "87b6344a-6905-4a08-a75d-38311f88f2b5",
+        "memberId": "2",
+        "totalAmount": 1,
+        "currentAmount": 0
+      },
+      {
+        "id": "fa-060",
+        "mealPlanId": "mp-006",
+        "ingredientId": "630014ac-daec-492b-938c-0720f3f42153",
+        "memberId": "11",
+        "totalAmount": 1,
+        "currentAmount": 0
+      },
+      {
+        "id": "fa-061",
+        "mealPlanId": "mp-006",
+        "ingredientId": "26464db1-8fda-43cc-94d0-568c22d93daa",
+        "memberId": "15",
+        "totalAmount": 1,
+        "currentAmount": 0
+      },
+      {
+        "id": "fa-062",
+        "mealPlanId": "mp-006",
+        "ingredientId": "26464db1-8fda-43cc-94d0-568c22d93daa",
+        "memberId": "2",
+        "totalAmount": 1,
+        "currentAmount": 0
+      },
+      {
+        "id": "fa-063",
+        "mealPlanId": "mp-006",
+        "ingredientId": "7f611d3e-09a6-4f12-b84e-d285da31875f",
+        "memberId": "9",
+        "totalAmount": 1,
+        "currentAmount": 0
+      },
+      {
+        "id": "fa-064",
+        "mealPlanId": "mp-006",
+        "ingredientId": "2fd1733c-8cbb-4f80-8bc4-dbe5cf3377fd",
+        "memberId": "9",
+        "totalAmount": 1,
+        "currentAmount": 0
+      },
+
+      {
+        "id": "fa-065",
+        "mealPlanId": "mp-007",
+        "ingredientId": "83f6f356-debb-4fae-99a1-878db6dda099",
+        "memberId": "12",
+        "totalAmount": 1,
+        "currentAmount": 0
+      },
+      {
+        "id": "fa-066",
+        "mealPlanId": "mp-007",
+        "ingredientId": "83f6f356-debb-4fae-99a1-878db6dda099",
+        "memberId": "5",
+        "totalAmount": 0.5,
+        "currentAmount": 0
+      },
+      {
+        "id": "fa-067",
+        "mealPlanId": "mp-007",
+        "ingredientId": "87b6344a-6905-4a08-a75d-38311f88f2b5",
+        "memberId": "5",
+        "totalAmount": 1,
+        "currentAmount": 0
+      },
+      {
+        "id": "fa-068",
+        "mealPlanId": "mp-007",
+        "ingredientId": "630014ac-daec-492b-938c-0720f3f42153",
+        "memberId": "11",
+        "totalAmount": 1,
+        "currentAmount": 0
+      },
+      {
+        "id": "fa-069",
+        "mealPlanId": "mp-007",
+        "ingredientId": "26464db1-8fda-43cc-94d0-568c22d93daa",
+        "memberId": "10",
+        "totalAmount": 1,
+        "currentAmount": 0
+      },
+      {
+        "id": "fa-070",
+        "mealPlanId": "mp-007",
+        "ingredientId": "26464db1-8fda-43cc-94d0-568c22d93daa",
+        "memberId": "8",
+        "totalAmount": 1,
+        "currentAmount": 0
+      },
+      {
+        "id": "fa-071",
+        "mealPlanId": "mp-007",
+        "ingredientId": "797f58d1-3f75-4454-a396-9953c7cdcaba",
+        "memberId": "7",
+        "totalAmount": 1,
+        "currentAmount": 0
+      },
+      {
+        "id": "fa-072",
+        "mealPlanId": "mp-007",
+        "ingredientId": "7f611d3e-09a6-4f12-b84e-d285da31875f",
+        "memberId": "9",
+        "totalAmount": 1,
+        "currentAmount": 0
+      },
+      {
+        "id": "fa-073",
+        "mealPlanId": "mp-007",
+        "ingredientId": "47af9f55-cb1e-40bc-a5d8-1d2e77b78a8d",
+        "memberId": "5",
+        "totalAmount": 1,
+        "currentAmount": 0
+      },
+      {
+        "id": "fa-074",
+        "mealPlanId": "mp-007",
+        "ingredientId": "4bc3c6f0-b5d5-4ef2-9167-36e11f1c91cb",
+        "memberId": "5",
+        "totalAmount": 1,
+        "currentAmount": 0
+      },
+      {
+        "id": "fa-075",
+        "mealPlanId": "mp-007",
+        "ingredientId": "9f49fe17-b4c3-4d76-8f75-3f4f97f40c2d",
+        "memberId": "12",
+        "totalAmount": 1,
+        "currentAmount": 0
+      },
+
+      {
+        "id": "fa-076",
+        "mealPlanId": "mp-008",
+        "ingredientId": "e7d3d94b-85bb-4666-a5a9-20db76837325",
+        "memberId": "10",
+        "totalAmount": 1,
+        "currentAmount": 0
+      },
+      {
+        "id": "fa-077",
+        "mealPlanId": "mp-008",
+        "ingredientId": "e7d3d94b-85bb-4666-a5a9-20db76837325",
+        "memberId": "9",
+        "totalAmount": 1,
+        "currentAmount": 0
+      },
+      {
+        "id": "fa-078",
+        "mealPlanId": "mp-008",
+        "ingredientId": "87b6344a-6905-4a08-a75d-38311f88f2b5",
+        "memberId": "15",
+        "totalAmount": 1,
+        "currentAmount": 0
+      },
+      {
+        "id": "fa-079",
+        "mealPlanId": "mp-008",
+        "ingredientId": "630014ac-daec-492b-938c-0720f3f42153",
+        "memberId": "16",
+        "totalAmount": 1,
+        "currentAmount": 0
+      },
+      {
+        "id": "fa-080",
+        "mealPlanId": "mp-008",
+        "ingredientId": "26464db1-8fda-43cc-94d0-568c22d93daa",
+        "memberId": "11",
+        "totalAmount": 1,
+        "currentAmount": 0
+      },
+      {
+        "id": "fa-081",
+        "mealPlanId": "mp-008",
+        "ingredientId": "26464db1-8fda-43cc-94d0-568c22d93daa",
+        "memberId": "1",
+        "totalAmount": 1,
+        "currentAmount": 0
+      },
+      {
+        "id": "fa-082",
+        "mealPlanId": "mp-008",
+        "ingredientId": "7f611d3e-09a6-4f12-b84e-d285da31875f",
+        "memberId": "9",
+        "totalAmount": 1,
+        "currentAmount": 0
+      },
+      {
+        "id": "fa-083",
+        "mealPlanId": "mp-008",
+        "ingredientId": "2fd1733c-8cbb-4f80-8bc4-dbe5cf3377fd",
+        "memberId": "9",
+        "totalAmount": 1,
+        "currentAmount": 0
+      },
+      {
+        "id": "fa-084",
+        "mealPlanId": "mp-008",
+        "ingredientId": "47af9f55-cb1e-40bc-a5d8-1d2e77b78a8d",
+        "memberId": "14",
+        "totalAmount": 1,
+        "currentAmount": 0
+      },
+      {
+        "id": "fa-085",
+        "mealPlanId": "mp-008",
+        "ingredientId": "9f49fe17-b4c3-4d76-8f75-3f4f97f40c2d",
+        "memberId": "12",
+        "totalAmount": 1,
+        "currentAmount": 0
+      },
+
+      {
+        "id": "fa-086",
+        "mealPlanId": "mp-009",
+        "ingredientId": "83f6f356-debb-4fae-99a1-878db6dda099",
+        "memberId": "15",
+        "totalAmount": 1,
+        "currentAmount": 0
+      },
+      {
+        "id": "fa-087",
+        "mealPlanId": "mp-009",
+        "ingredientId": "0dab0d14-e3d3-48dd-8322-03d1c602951e",
+        "memberId": "15",
+        "totalAmount": 1,
+        "currentAmount": 0
+      },
+      {
+        "id": "fa-088",
+        "mealPlanId": "mp-009",
+        "ingredientId": "87b6344a-6905-4a08-a75d-38311f88f2b5",
+        "memberId": "9",
+        "totalAmount": 1,
+        "currentAmount": 0
+      },
+      {
+        "id": "fa-089",
+        "mealPlanId": "mp-009",
+        "ingredientId": "630014ac-daec-492b-938c-0720f3f42153",
+        "memberId": "16",
+        "totalAmount": 1,
+        "currentAmount": 0
+      },
+      {
+        "id": "fa-090",
+        "mealPlanId": "mp-009",
+        "ingredientId": "26464db1-8fda-43cc-94d0-568c22d93daa",
+        "memberId": "16",
+        "totalAmount": 1,
+        "currentAmount": 0
+      },
+      {
+        "id": "fa-091",
+        "mealPlanId": "mp-009",
+        "ingredientId": "26464db1-8fda-43cc-94d0-568c22d93daa",
+        "memberId": "12",
+        "totalAmount": 1,
+        "currentAmount": 0
+      },
+      {
+        "id": "fa-092",
+        "mealPlanId": "mp-009",
+        "ingredientId": "797f58d1-3f75-4454-a396-9953c7cdcaba",
+        "memberId": "16",
+        "totalAmount": 1,
+        "currentAmount": 0
+      },
+      {
+        "id": "fa-093",
+        "mealPlanId": "mp-009",
+        "ingredientId": "7f611d3e-09a6-4f12-b84e-d285da31875f",
+        "memberId": "9",
+        "totalAmount": 1,
+        "currentAmount": 0
+      },
+      {
+        "id": "fa-094",
+        "mealPlanId": "mp-009",
+        "ingredientId": "47af9f55-cb1e-40bc-a5d8-1d2e77b78a8d",
+        "memberId": "9",
+        "totalAmount": 1,
+        "currentAmount": 0
+      },
+      {
+        "id": "fa-095",
+        "mealPlanId": "mp-009",
+        "ingredientId": "93d62f40-c15d-4a73-88f6-bb28af92ef64",
+        "memberId": "3",
+        "totalAmount": 1,
+        "currentAmount": 0
+      },
+      {
+        "id": "fa-096",
+        "mealPlanId": "mp-009",
+        "ingredientId": "9f49fe17-b4c3-4d76-8f75-3f4f97f40c2d",
+        "memberId": "12",
+        "totalAmount": 1,
+        "currentAmount": 0
+      },
+      {
+        "id": "fa-097",
+        "mealPlanId": "mp-009",
+        "ingredientId": "b0009724-ed6f-473f-b2d7-83defe07fb98",
+        "memberId": "16",
+        "totalAmount": 2,
+        "currentAmount": 0
+      },
+
+      {
+        "id": "fa-098",
+        "mealPlanId": "mp-010",
+        "ingredientId": "0f197d7f-4a52-40ff-9163-a85149fff88e",
+        "memberId": "14",
+        "totalAmount": 1,
+        "currentAmount": 0
+      },
+      {
+        "id": "fa-099",
+        "mealPlanId": "mp-010",
+        "ingredientId": "0f197d7f-4a52-40ff-9163-a85149fff88e",
+        "memberId": "11",
+        "totalAmount": 1,
+        "currentAmount": 0
+      },
+      {
+        "id": "fa-100",
+        "mealPlanId": "mp-010",
+        "ingredientId": "87b6344a-6905-4a08-a75d-38311f88f2b5",
+        "memberId": "12",
+        "totalAmount": 1,
+        "currentAmount": 0
+      },
+      {
+        "id": "fa-101",
+        "mealPlanId": "mp-010",
+        "ingredientId": "26464db1-8fda-43cc-94d0-568c22d93daa",
+        "memberId": "5",
+        "totalAmount": 1,
+        "currentAmount": 0
+      },
+      {
+        "id": "fa-102",
+        "mealPlanId": "mp-010",
+        "ingredientId": "26464db1-8fda-43cc-94d0-568c22d93daa",
+        "memberId": "1",
+        "totalAmount": 1,
+        "currentAmount": 0
+      },
+      {
+        "id": "fa-103",
+        "mealPlanId": "mp-010",
+        "ingredientId": "7f611d3e-09a6-4f12-b84e-d285da31875f",
+        "memberId": "9",
+        "totalAmount": 1,
+        "currentAmount": 0
+      },
+      {
+        "id": "fa-104",
+        "mealPlanId": "mp-010",
+        "ingredientId": "2fd1733c-8cbb-4f80-8bc4-dbe5cf3377fd",
+        "memberId": "10",
+        "totalAmount": 1,
+        "currentAmount": 0
+      }
+    ],
+    "foodPickups": []
+  }
+}

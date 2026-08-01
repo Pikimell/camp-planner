@@ -1,0 +1,413 @@
+.page {
+  width: 100%;
+  min-height: 100vh;
+  padding: 32px;
+}
+
+.header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 24px;
+  max-width: 1180px;
+  margin-bottom: 28px;
+}
+
+.eyebrow {
+  margin-bottom: 8px;
+  color: #587065;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.title {
+  color: #10231d;
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 1.1;
+}
+
+.summary {
+  display: flex;
+  align-items: stretch;
+  gap: 10px;
+}
+
+.summary div {
+  min-width: 104px;
+  padding: 10px 12px;
+  border: 1px solid #d8dfd2;
+  border-radius: 8px;
+  background: #ffffff;
+}
+
+.summary span {
+  display: block;
+  color: #10231d;
+  font-size: 22px;
+  font-weight: 900;
+  line-height: 1;
+}
+
+.summary small {
+  display: block;
+  margin-top: 7px;
+  color: #587065;
+  font-size: 12px;
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+.section {
+  max-width: 100%;
+  padding: 22px;
+  border: 1px solid #d8dfd2;
+  border-radius: 8px;
+  background: #ffffff;
+}
+
+.toolbar {
+  display: flex;
+  align-items: end;
+  gap: 14px;
+  margin-bottom: 18px;
+}
+
+.searchField,
+.teamSwitcher {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.searchField {
+  width: min(420px, 100%);
+}
+
+.searchField span,
+.teamSwitcher > span {
+  color: #42564d;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.searchField input {
+  width: 100%;
+  min-height: 40px;
+  padding: 9px 10px;
+  border: 1px solid #d8dfd2;
+  border-radius: 8px;
+  background: #f7faf5;
+  color: #10231d;
+  font: inherit;
+  outline: none;
+}
+
+.searchField input:focus {
+  border-color: #6f836f;
+  background: #ffffff;
+}
+
+.teamButtons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.teamButtons button {
+  min-width: 44px;
+  min-height: 40px;
+  padding: 0 14px;
+  border: 1px solid #d8dfd2;
+  border-radius: 8px;
+  background: #f7faf5;
+  color: #10231d;
+  font-size: 14px;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.teamButtons button:hover {
+  background: #eef4ea;
+}
+
+.teamButtons .activeTeamButton {
+  border-color: #10231d;
+  background: #10231d;
+  color: #ffffff;
+}
+
+.emptyState {
+  padding: 18px;
+  border: 1px dashed #cbd7c6;
+  border-radius: 8px;
+  background: #f7faf5;
+  color: #587065;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.tableWrapper {
+  max-height: calc(100vh - 230px);
+  overflow: auto;
+  border: 1px solid #10231d;
+  border-radius: 8px;
+  background: #ffffff;
+}
+
+.distributionTable {
+  width: max-content;
+  min-width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+.distributionTable th,
+.distributionTable td {
+  height: 38px;
+  padding: 6px 8px;
+  border-right: 1px solid #cfd7cb;
+  border-bottom: 1px solid #cfd7cb;
+  background: #ffffff;
+  color: #10231d;
+  font-size: 14px;
+  line-height: 1.2;
+  vertical-align: middle;
+}
+
+.distributionTable th {
+  position: sticky;
+  top: 0;
+  z-index: 5;
+  overflow: hidden;
+  padding-right: 14px;
+  border-bottom: 2px solid #10231d;
+  background: #f7faf5;
+  font-size: 13px;
+  font-weight: 900;
+  text-align: left;
+  white-space: nowrap;
+}
+
+.columnTitle {
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.resizeHandle {
+  position: absolute;
+  top: 0;
+  right: -4px;
+  z-index: 2;
+  width: 10px;
+  height: 100%;
+  border: 0;
+  background: transparent;
+  cursor: col-resize;
+}
+
+.resizeHandle::after {
+  position: absolute;
+  top: 8px;
+  right: 4px;
+  bottom: 8px;
+  width: 2px;
+  border-radius: 999px;
+  background: transparent;
+  content: "";
+}
+
+.resizeHandle:hover::after,
+.resizeHandle:focus-visible::after {
+  background: #10231d;
+}
+
+.distributionTable input {
+  width: 100%;
+  min-height: 30px;
+  padding: 4px 6px;
+  border: 1px solid transparent;
+  border-radius: 6px;
+  background: transparent;
+  color: #10231d;
+  font: inherit;
+  font-weight: 800;
+  outline: none;
+  text-align: right;
+}
+
+.distributionTable input:focus {
+  border-color: #6f836f;
+  background: #ffffff;
+}
+
+.productColumn,
+.productCell {
+  position: sticky;
+  left: 0;
+  z-index: 4;
+  border-right: 2px solid #10231d;
+}
+
+.amountColumn {
+  position: sticky;
+  left: 240px;
+  z-index: 4;
+}
+
+.weightColumn {
+  position: sticky;
+  left: 336px;
+  z-index: 4;
+  border-right: 2px solid #10231d;
+}
+
+.distributionTable td:nth-child(2) {
+  position: sticky;
+  left: 240px;
+  z-index: 3;
+  font-weight: 800;
+  text-align: right;
+}
+
+.distributionTable td:nth-child(3) {
+  position: sticky;
+  left: 336px;
+  z-index: 3;
+  border-right: 2px solid #10231d;
+  font-weight: 800;
+  text-align: right;
+}
+
+.distributionTable th.productColumn,
+.distributionTable th.amountColumn,
+.distributionTable th.weightColumn {
+  z-index: 8;
+}
+
+.memberColumn {
+  position: relative;
+}
+
+.resultColumn {
+  position: relative;
+}
+
+.actionsColumn {
+  position: relative;
+}
+
+.distributionTable th.resultColumn,
+.distributionTable th.actionsColumn,
+.resultCell {
+  border-left: 2px solid #10231d;
+}
+
+.distributionTable th.actionsColumn,
+.distributionTable td:last-child {
+  border-right: 2px solid #10231d;
+}
+
+.productCell span {
+  display: block;
+  overflow: hidden;
+  font-weight: 800;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.productCell small {
+  display: block;
+  margin-top: 2px;
+  color: #587065;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.underAssignedRow td {
+  background: #fff7df;
+}
+
+.completeRow td {
+  background: #f0faed;
+}
+
+.overAssignedRow td {
+  background: #fff0f0;
+}
+
+.resultCell {
+  font-weight: 900;
+  text-align: right;
+}
+
+.actionsCell {
+  border-left: 2px solid #10231d;
+}
+
+.rowActions {
+  display: flex;
+  gap: 6px;
+  min-width: 0;
+}
+
+.rowActions button {
+  min-height: 30px;
+  padding: 0 8px;
+  border: 1px solid #d8dfd2;
+  border-radius: 7px;
+  background: #ffffff;
+  color: #10231d;
+  font-size: 12px;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.rowActions button:hover {
+  background: #eef4ea;
+}
+
+.distributionTable tfoot td {
+  position: sticky;
+  bottom: 0;
+  z-index: 6;
+  border-top: 2px solid #10231d;
+  background: #ffffff;
+  font-weight: 900;
+  text-align: right;
+}
+
+.distributionTable tfoot .productCell {
+  z-index: 7;
+  text-align: left;
+}
+
+@media (max-width: 920px) {
+  .page {
+    padding: 20px;
+  }
+
+  .header {
+    flex-direction: column;
+  }
+
+  .title {
+    font-size: 32px;
+  }
+
+  .summary,
+  .toolbar {
+    width: 100%;
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .summary div,
+  .searchField,
+  .teamSwitcher {
+    width: 100%;
+  }
+}

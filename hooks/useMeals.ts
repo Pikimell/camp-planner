@@ -16,6 +16,13 @@ const includesSearch = (value: string | number | undefined, search: string) => {
   return String(value ?? "").toLowerCase().includes(normalizedSearch);
 };
 
+const mealTypeOrder: Record<MealType, number> = {
+  Сніданок: 1,
+  Обід: 2,
+  Вечеря: 3,
+  Перекус: 4,
+};
+
 export const useMeals = () => {
   const store = useMealStore();
 
@@ -61,7 +68,14 @@ export const useMeals = () => {
 
   const sortedMealPlans = useMemo(() => {
     return [...store.mealPlans].sort((firstPlan, secondPlan) => {
-      return firstPlan.day - secondPlan.day;
+      if (firstPlan.day !== secondPlan.day) {
+        return firstPlan.day - secondPlan.day;
+      }
+
+      return (
+        (mealTypeOrder[firstPlan.mealType] ?? 99) -
+        (mealTypeOrder[secondPlan.mealType] ?? 99)
+      );
     });
   }, [store.mealPlans]);
 
@@ -87,9 +101,11 @@ export const useMeals = () => {
     [mealPlansByDay],
   );
 
-  const getMealsByType = useCallback(
-    (type: MealType) => store.meals.filter((meal) => meal.type === type),
-    [store.meals],
+  const getMealPlansByType = useCallback(
+    (mealType: MealType) => {
+      return store.mealPlans.filter((mealPlan) => mealPlan.mealType === mealType);
+    },
+    [store.mealPlans],
   );
 
   const searchIngredients = useCallback(
@@ -110,7 +126,6 @@ export const useMeals = () => {
       return sortedMeals.filter((meal) => {
         return (
           includesSearch(meal.name, search) ||
-          includesSearch(meal.type, search) ||
           includesSearch(meal.notes, search)
         );
       });
@@ -209,7 +224,7 @@ export const useMeals = () => {
     getMealIngredientsByMealId,
     getMealPlanById,
     getMealPlansByDay,
-    getMealsByType,
+    getMealPlansByType,
     searchIngredients,
     searchMeals,
     getRecipeForMeal,

@@ -1,3 +1,5 @@
+import HomeExportButton from "./HomeExportButton";
+import HomeImportButton from "./HomeImportButton";
 import css from "./Home.module.css";
 
 const HomeHeader = () => {
@@ -5,10 +7,14 @@ const HomeHeader = () => {
     <section className={css["header"]}>
       <div>
         <p className={css["eyebrow"]}>Панель організатора</p>
-        <h1 className={css["title"]}>Огляд походу</h1>
+        <h1 className={css["title"]}>Планування одного походу</h1>
       </div>
-      <div className={css["headerMeta"]}>
-        <span>Camp Planner</span>
+      <div className={css["headerActions"]}>
+        <div className={css["headerMeta"]}>
+          <span>Camp Planner</span>
+        </div>
+        <HomeExportButton />
+        <HomeImportButton />
       </div>
     </section>
   );
