@@ -1,5 +1,5 @@
 export type Unit = "кг" | "г" | "шт";
-export type MealType = "Breakfast" | "Lunch" | "Dinner" | "Snack";
+export type MealType = "Сніданок" | "Вечеря" | "Обід" | "Перекус";
 
 export interface Ingredient {
   id: string;
