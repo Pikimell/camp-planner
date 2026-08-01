@@ -1,29 +1,57 @@
 .section {
   max-width: 1180px;
   margin-bottom: 24px;
-  padding: 22px;
   border: 1px solid #d8dfd2;
   border-radius: 8px;
   background: #ffffff;
 }
 
-.sectionHeader {
-  margin-bottom: 14px;
-}
-
-.sectionHeader h2 {
+.summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  min-height: 54px;
+  padding: 0 18px;
   color: #10231d;
-  font-size: 20px;
-  font-weight: 800;
-  line-height: 1.2;
+  cursor: pointer;
+  list-style: none;
 }
 
-.sectionHeader p {
-  margin-top: 6px;
+.summary::-webkit-details-marker {
+  display: none;
+}
+
+.summary::after {
+  width: 10px;
+  height: 10px;
+  border-right: 2px solid #587065;
+  border-bottom: 2px solid #587065;
+  transform: rotate(45deg) translateY(-2px);
+  transition: transform 160ms ease;
+  content: "";
+}
+
+.section[open] .summary::after {
+  transform: rotate(225deg) translateY(-2px);
+}
+
+.summary span {
   color: #587065;
+  font-size: 12px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.summary strong {
+  margin-left: auto;
+  color: #10231d;
   font-size: 14px;
-  font-weight: 600;
-  line-height: 1.4;
+  font-weight: 800;
+}
+
+.content {
+  padding: 0 22px 22px;
 }
 
 .textarea {

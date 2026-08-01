@@ -43,7 +43,8 @@
   font-weight: 800;
 }
 
-.section {
+.section,
+.editorSection {
   max-width: 1280px;
   padding: 22px;
   border: 1px solid #d8dfd2;
@@ -51,7 +52,19 @@
   background: #ffffff;
 }
 
+.editorSection {
+  margin-bottom: 24px;
+}
+
+.section + .section {
+  margin-top: 24px;
+}
+
 .sectionHeader {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
   margin-bottom: 18px;
 }
 
@@ -60,6 +73,625 @@
   font-size: 24px;
   font-weight: 800;
   line-height: 1.15;
+}
+
+.headingWithTooltip,
+.labelWithTooltip {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.labelWithTooltip {
+  flex-direction: row;
+}
+
+.filterField,
+.teamSwitcher,
+.toolbarGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.teamSwitcher {
+  align-items: flex-end;
+}
+
+.filterField span,
+.teamSwitcher > span,
+.toolbarGroup > span {
+  color: #42564d;
+  font-size: 12px;
+  font-weight: 900;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.editorToolbar {
+  display: grid;
+  gap: 18px;
+  margin-bottom: 18px;
+  padding-bottom: 18px;
+  border-bottom: 1px solid #e2e9df;
+}
+
+.editorToolbarTop,
+.toolbarFooter {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.editorToolbarTop h2 {
+  color: #10231d;
+  font-size: 24px;
+  font-weight: 800;
+  line-height: 1.15;
+}
+
+.toolbarGrid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
+  gap: 16px;
+}
+
+.primaryActions,
+.resetActions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.segmentedButtons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.segmentedButtons button {
+  min-height: 38px;
+  padding: 0 14px;
+  border: 1px solid #d8dfd2;
+  border-radius: 8px;
+  background: #f7faf5;
+  color: #10231d;
+  font-size: 14px;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.segmentedButtons button:hover {
+  background: #eef4ea;
+}
+
+.segmentedButtons .activeSegmentButton {
+  border-color: #10231d;
+  background: #10231d;
+  color: #ffffff;
+}
+
+.filterField select {
+  min-width: 160px;
+  min-height: 38px;
+  padding: 8px 10px;
+  border: 1px solid #d8dfd2;
+  border-radius: 8px;
+  background: #f7faf5;
+  color: #10231d;
+  font: inherit;
+  font-size: 14px;
+  font-weight: 800;
+  outline: none;
+}
+
+.filterField select:focus {
+  border-color: #6f836f;
+  background: #ffffff;
+}
+
+.autoPickupButton {
+  min-height: 38px;
+  padding: 0 14px;
+  border: 0;
+  border-radius: 8px;
+  background: #10231d;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.autoPickupButton:hover {
+  background: #1d3a31;
+}
+
+.autoPickupButton:disabled {
+  background: #9aa69f;
+  cursor: not-allowed;
+}
+
+.resetPickupButton {
+  min-height: 38px;
+  padding: 0 14px;
+  border: 1px solid #e4c4bd;
+  border-radius: 8px;
+  background: #fff5f2;
+  color: #9f3324;
+  font-size: 14px;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.resetPickupButton:hover {
+  background: #ffe9e3;
+}
+
+.resetPickupButton:disabled {
+  border-color: #d8dfd2;
+  background: #f2f5f0;
+  color: #8d9a92;
+  cursor: not-allowed;
+}
+
+.teamButtons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.teamButtons button {
+  min-width: 44px;
+  min-height: 38px;
+  padding: 0 14px;
+  border: 1px solid #d8dfd2;
+  border-radius: 8px;
+  background: #f7faf5;
+  color: #10231d;
+  font-size: 14px;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.teamButtons button:hover {
+  background: #eef4ea;
+}
+
+.teamButtons .activeTeamButton {
+  border-color: #10231d;
+  background: #10231d;
+  color: #ffffff;
+}
+
+.pickupEditor {
+  display: grid;
+  gap: 14px;
+}
+
+.selectedMeal {
+  padding: 14px;
+  border: 1px solid #d8dfd2;
+  border-radius: 8px;
+  background: #f7faf5;
+  color: #10231d;
+  font-size: 20px;
+  font-weight: 900;
+}
+
+.editorRows {
+  display: grid;
+  gap: 12px;
+}
+
+.editorRow {
+  padding: 14px;
+  border: 1px solid #d8dfd2;
+  border-radius: 8px;
+  background: #ffffff;
+}
+
+.completedEditorRow {
+  border-color: #c8dfc2;
+  background: #f0faed;
+}
+
+.editorRowHeader {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.editorRowHeader > :first-child {
+  width: 100%;
+}
+
+.editorRowHeader h3 {
+  color: #10231d;
+  font-size: 18px;
+  font-weight: 900;
+  line-height: 1.2;
+}
+
+.editorStats {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(90px, 1fr));
+  gap: 8px;
+}
+
+.editorStats div {
+  padding: 8px 10px;
+  border: 1px solid #d8dfd2;
+  border-radius: 8px;
+  background: #f7faf5;
+}
+
+.editorStats small {
+  display: block;
+  color: #587065;
+  font-size: 11px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.editorStats strong {
+  display: block;
+  margin-top: 6px;
+  color: #10231d;
+  font-size: 18px;
+  font-weight: 900;
+  line-height: 1;
+}
+
+.toggleEditorRowButton {
+  align-self: stretch;
+  min-width: 112px;
+  padding: 0 12px;
+  border: 1px solid #d8dfd2;
+  border-radius: 8px;
+  background: #ffffff;
+  color: #10231d;
+  font-size: 13px;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.toggleEditorRowButton:hover {
+  background: #eef4ea;
+}
+
+.toggleEditorRowButton[aria-expanded="true"] {
+  border-color: #10231d;
+  background: #10231d;
+  color: #ffffff;
+}
+
+.editorRowDetails {
+  margin-top: 12px;
+}
+
+.pickupControls {
+  display: grid;
+  grid-template-columns: minmax(260px, 1fr) 140px auto;
+  gap: 10px;
+  align-items: end;
+  margin-bottom: 12px;
+}
+
+.pickupControls label {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.pickupControls span {
+  color: #42564d;
+  font-size: 12px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.pickupControls select,
+.pickupControls input {
+  width: 100%;
+  min-height: 38px;
+  padding: 8px 10px;
+  border: 1px solid #d8dfd2;
+  border-radius: 8px;
+  background: #f7faf5;
+  color: #10231d;
+  font: inherit;
+  font-size: 14px;
+  font-weight: 800;
+  outline: none;
+}
+
+.pickupControls select:focus,
+.pickupControls input:focus {
+  border-color: #6f836f;
+  background: #ffffff;
+}
+
+.pickupControls button {
+  min-height: 38px;
+  padding: 0 14px;
+  border: 0;
+  border-radius: 8px;
+  background: #10231d;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.pickupControls button:disabled {
+  background: #9aa69f;
+  cursor: not-allowed;
+}
+
+.pickupList {
+  display: grid;
+  gap: 8px;
+  list-style: none;
+}
+
+.pickupList li {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 80px auto;
+  gap: 10px;
+  align-items: center;
+  padding: 8px 10px;
+  border: 1px solid #e2e9df;
+  border-radius: 8px;
+  background: #f7faf5;
+}
+
+.pickupList span {
+  overflow: hidden;
+  color: #10231d;
+  font-size: 14px;
+  font-weight: 800;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.pickupList strong {
+  color: #10231d;
+  font-size: 14px;
+  font-weight: 900;
+  text-align: right;
+}
+
+.pickupList button {
+  min-height: 32px;
+  padding: 0 10px;
+  border: 1px solid #f0c8c8;
+  border-radius: 8px;
+  background: #fff4f4;
+  color: #9f2424;
+  font-size: 12px;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.pickupList button:hover {
+  background: #ffe9e9;
+}
+
+.emptyPickup {
+  padding: 12px;
+  border: 1px dashed #cbd7c6;
+  border-radius: 8px;
+  background: #f7faf5;
+  color: #587065;
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.weightChartWrap {
+  display: grid;
+  gap: 16px;
+}
+
+.chartControls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.chartToggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 34px;
+  padding: 6px 10px;
+  border: 1px solid #d8dfd2;
+  border-radius: 8px;
+  background: #ffffff;
+  color: #10231d;
+  font-size: 14px;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.chartToggle input {
+  width: 16px;
+  height: 16px;
+  accent-color: #10231d;
+}
+
+.chartToggle span {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.chartToggle span::before {
+  width: 24px;
+  height: 4px;
+  border-radius: 999px;
+  background: currentColor;
+  content: "";
+}
+
+.maleAverageToggle,
+.maleMaxToggle,
+.maleMinToggle {
+  color: #1f6f9f;
+}
+
+.femaleAverageToggle,
+.femaleMaxToggle,
+.femaleMinToggle {
+  color: #b04472;
+}
+
+.maleMaxToggle span::before,
+.femaleMaxToggle span::before {
+  height: 0;
+  border-top: 4px dashed currentColor;
+  background: transparent;
+}
+
+.maleMinToggle span::before,
+.femaleMinToggle span::before {
+  height: 0;
+  border-top: 4px dotted currentColor;
+  background: transparent;
+}
+
+.weightChart {
+  width: 100%;
+  min-height: 280px;
+  border: 1px solid #d8dfd2;
+  border-radius: 8px;
+  background: #fbfdf9;
+}
+
+.chartGridLine {
+  stroke: #d8dfd2;
+  stroke-width: 1;
+}
+
+.chartAxisLabel {
+  fill: #587065;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.maleChartLine,
+.femaleChartLine,
+.maleMaxChartLine,
+.femaleMaxChartLine,
+.maleMinChartLine,
+.femaleMinChartLine {
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 5;
+}
+
+.maleChartLine {
+  stroke: #1f6f9f;
+}
+
+.femaleChartLine {
+  stroke: #b04472;
+}
+
+.maleMaxChartLine,
+.femaleMaxChartLine {
+  stroke-dasharray: 10 8;
+  stroke-width: 4;
+}
+
+.maleMaxChartLine {
+  stroke: #1f6f9f;
+}
+
+.femaleMaxChartLine {
+  stroke: #b04472;
+}
+
+.maleMinChartLine,
+.femaleMinChartLine {
+  stroke-dasharray: 2 9;
+  stroke-width: 4;
+}
+
+.maleMinChartLine {
+  stroke: #1f6f9f;
+}
+
+.femaleMinChartLine {
+  stroke: #b04472;
+}
+
+.maleChartPoint,
+.femaleChartPoint,
+.maleMaxChartPoint,
+.femaleMaxChartPoint,
+.maleMinChartPoint,
+.femaleMinChartPoint {
+  stroke: #ffffff;
+  stroke-width: 2;
+}
+
+.maleChartPoint {
+  fill: #1f6f9f;
+}
+
+.femaleChartPoint {
+  fill: #b04472;
+}
+
+.maleMaxChartPoint {
+  fill: #1f6f9f;
+}
+
+.femaleMaxChartPoint {
+  fill: #b04472;
+}
+
+.maleMinChartPoint {
+  fill: #1f6f9f;
+}
+
+.femaleMinChartPoint {
+  fill: #b04472;
+}
+
+.chartLabels {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 8px;
+}
+
+.chartLabels div {
+  padding: 10px;
+  border: 1px solid #d8dfd2;
+  border-radius: 8px;
+  background: #f7faf5;
+}
+
+.chartLabels strong,
+.chartLabels span {
+  display: block;
+}
+
+.chartLabels strong {
+  margin-bottom: 4px;
+  color: #10231d;
+  font-size: 13px;
+  font-weight: 900;
+}
+
+.chartLabels span {
+  color: #42564d;
+  font-size: 12px;
+  font-weight: 800;
 }
 
 .cardsGrid {
@@ -153,8 +785,14 @@
     padding: 20px;
   }
 
-  .header {
+  .header,
+  .sectionHeader,
+  .teamSwitcher,
+  .editorRowHeader,
+  .editorToolbarTop,
+  .toolbarFooter {
     flex-direction: column;
+    align-items: stretch;
   }
 
   .title {
@@ -168,5 +806,34 @@
 
   .pickupCard {
     min-width: 520px;
+  }
+
+  .teamButtons {
+    justify-content: flex-start;
+  }
+
+  .toolbarGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .primaryActions,
+  .resetActions {
+    justify-content: flex-start;
+  }
+
+  .pickupControls,
+  .pickupList li,
+  .editorStats {
+    grid-template-columns: 1fr;
+  }
+
+  .autoPickupButton,
+  .resetPickupButton,
+  .segmentedButtons button {
+    width: 100%;
+  }
+
+  .pickupList strong {
+    text-align: left;
   }
 }

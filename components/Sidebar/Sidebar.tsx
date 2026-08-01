@@ -15,6 +15,7 @@ const navigationLinks = [
   { href: "/duty-schedule", label: "Чергування", shortLabel: "Ч" },
   { href: "/food-distribution", label: "Розподіл продуктів", shortLabel: "Рп" },
   { href: "/food-pickup-plan", label: "Забір продуктів", shortLabel: "З" },
+  { href: "/final-plan", label: "Фінальний план", shortLabel: "Ф" },
 ];
 
 const Sidebar = () => {

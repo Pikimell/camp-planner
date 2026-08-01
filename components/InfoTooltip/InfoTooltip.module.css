@@ -1,0 +1,71 @@
+.tooltip {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+}
+
+.trigger {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 22px;
+  height: 22px;
+  border: 1px solid #cbd7c6;
+  border-radius: 50%;
+  background: #f7faf5;
+  color: #42564d;
+  font-size: 13px;
+  font-weight: 900;
+  line-height: 1;
+  cursor: help;
+}
+
+.trigger:hover,
+.trigger:focus-visible {
+  border-color: #10231d;
+  background: #10231d;
+  color: #ffffff;
+  outline: none;
+}
+
+.content {
+  position: absolute;
+  z-index: 15;
+  left: 50%;
+  bottom: calc(100% + 10px);
+  width: min(280px, 70vw);
+  padding: 10px 12px;
+  border: 1px solid #d8dfd2;
+  border-radius: 8px;
+  background: #ffffff;
+  box-shadow: 0 12px 32px rgba(16, 35, 29, 0.18);
+  color: #10231d;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1.35;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateX(-50%) translateY(4px);
+  transition:
+    opacity 120ms ease,
+    transform 120ms ease;
+}
+
+.content::after {
+  position: absolute;
+  left: 50%;
+  bottom: -6px;
+  width: 10px;
+  height: 10px;
+  border-right: 1px solid #d8dfd2;
+  border-bottom: 1px solid #d8dfd2;
+  background: #ffffff;
+  content: "";
+  transform: translateX(-50%) rotate(45deg);
+}
+
+.tooltip:hover .content,
+.trigger:focus-visible + .content {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+}

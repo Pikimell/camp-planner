@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import InfoTooltip from "@/components/InfoTooltip/InfoTooltip";
 import css from "./JsonStringImport.module.css";
 
 type JsonStringImportProps<Item> = {
@@ -84,33 +85,34 @@ const JsonStringImport = <Item,>({
   };
 
   return (
-    <section className={css["section"]}>
-      <div className={css["sectionHeader"]}>
-        <div>
-          <h2>{title}</h2>
-          <p>{description}</p>
+    <details className={css["section"]}>
+      <summary className={css["summary"]}>
+        <span>Додатково</span>
+        <strong>{title}</strong>
+        <InfoTooltip label={description} />
+      </summary>
+
+      <div className={css["content"]}>
+        <textarea
+          className={css["textarea"]}
+          value={jsonValue}
+          placeholder={example}
+          onChange={(event) => setJsonValue(event.target.value)}
+        />
+
+        <div className={css["actions"]}>
+          <button disabled={!jsonValue.trim()} type="button" onClick={handleImport}>
+            Імпортувати
+          </button>
+          <button type="button" onClick={() => setJsonValue(example)}>
+            Вставити приклад
+          </button>
         </div>
+
+        {error ? <div className={css["error"]}>{error}</div> : null}
+        {message ? <div className={css["success"]}>{message}</div> : null}
       </div>
-
-      <textarea
-        className={css["textarea"]}
-        value={jsonValue}
-        placeholder={example}
-        onChange={(event) => setJsonValue(event.target.value)}
-      />
-
-      <div className={css["actions"]}>
-        <button disabled={!jsonValue.trim()} type="button" onClick={handleImport}>
-          Імпортувати
-        </button>
-        <button type="button" onClick={() => setJsonValue(example)}>
-          Вставити приклад
-        </button>
-      </div>
-
-      {error ? <div className={css["error"]}>{error}</div> : null}
-      {message ? <div className={css["success"]}>{message}</div> : null}
-    </section>
+    </details>
   );
 };
 

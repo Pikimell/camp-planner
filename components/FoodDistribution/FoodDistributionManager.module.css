@@ -9,7 +9,7 @@
   align-items: flex-start;
   justify-content: space-between;
   gap: 24px;
-  max-width: 1180px;
+  max-width: 1280px;
   margin-bottom: 28px;
 }
 
@@ -35,7 +35,7 @@
 }
 
 .summary div {
-  min-width: 104px;
+  min-width: 112px;
   padding: 10px 12px;
   border: 1px solid #d8dfd2;
   border-radius: 8px;
@@ -60,7 +60,8 @@
 }
 
 .section {
-  max-width: 100%;
+  max-width: 1280px;
+  margin-bottom: 24px;
   padding: 22px;
   border: 1px solid #d8dfd2;
   border-radius: 8px;
@@ -148,221 +149,410 @@
   font-weight: 700;
 }
 
-.tableWrapper {
-  max-height: calc(100vh - 230px);
-  overflow: auto;
-  border: 1px solid #10231d;
+.balanceSection,
+.productsSection {
+  padding: 18px;
+  border: 1px solid #d8dfd2;
+  border-radius: 8px;
+}
+
+.balanceSection {
+  margin-bottom: 26px;
+  background: #f7faf5;
+}
+
+.productsSection {
+  background: #ffffff;
+}
+
+.subsectionHeader {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 16px;
+  padding-bottom: 14px;
+  border-bottom: 2px solid #d8dfd2;
+}
+
+.subsectionHeader h2 {
+  color: #10231d;
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 1.15;
+}
+
+.headingWithTooltip {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.sortControl {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: flex-end;
+}
+
+.sortControl > span {
+  color: #42564d;
+  font-size: 12px;
+  font-weight: 900;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.sortButtons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 8px;
+}
+
+.sortButtons button {
+  min-height: 36px;
+  padding: 0 12px;
+  border: 1px solid #d8dfd2;
   border-radius: 8px;
   background: #ffffff;
-}
-
-.distributionTable {
-  width: max-content;
-  min-width: 100%;
-  border-collapse: separate;
-  border-spacing: 0;
-}
-
-.distributionTable th,
-.distributionTable td {
-  height: 38px;
-  padding: 6px 8px;
-  border-right: 1px solid #cfd7cb;
-  border-bottom: 1px solid #cfd7cb;
-  background: #ffffff;
   color: #10231d;
-  font-size: 14px;
-  line-height: 1.2;
-  vertical-align: middle;
-}
-
-.distributionTable th {
-  position: sticky;
-  top: 0;
-  z-index: 5;
-  overflow: hidden;
-  padding-right: 14px;
-  border-bottom: 2px solid #10231d;
-  background: #f7faf5;
   font-size: 13px;
   font-weight: 900;
-  text-align: left;
-  white-space: nowrap;
+  cursor: pointer;
 }
 
-.columnTitle {
-  display: block;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
+.sortButtons button:hover {
+  background: #eef4ea;
 }
 
-.resizeHandle {
-  position: absolute;
-  top: 0;
-  right: -4px;
-  z-index: 2;
-  width: 10px;
-  height: 100%;
-  border: 0;
-  background: transparent;
-  cursor: col-resize;
-}
-
-.resizeHandle::after {
-  position: absolute;
-  top: 8px;
-  right: 4px;
-  bottom: 8px;
-  width: 2px;
-  border-radius: 999px;
-  background: transparent;
-  content: "";
-}
-
-.resizeHandle:hover::after,
-.resizeHandle:focus-visible::after {
+.sortButtons .activeSortButton {
+  border-color: #10231d;
   background: #10231d;
+  color: #ffffff;
 }
 
-.distributionTable input {
-  width: 100%;
-  min-height: 30px;
-  padding: 4px 6px;
-  border: 1px solid transparent;
-  border-radius: 6px;
-  background: transparent;
+.productsActions {
+  display: flex;
+  flex: 0 0 auto;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 8px;
+}
+
+.autoDistributionButton,
+.resetDistributionButton {
+  min-height: 40px;
+  padding: 0 14px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.autoDistributionButton {
+  border: 0;
+  background: #10231d;
+  color: #ffffff;
+}
+
+.autoDistributionButton:hover {
+  background: #1d3a31;
+}
+
+.autoDistributionButton:disabled,
+.resetDistributionButton:disabled {
+  background: #9aa69f;
+  cursor: not-allowed;
+}
+
+.resetDistributionButton {
+  border: 1px solid #f0c8c8;
+  background: #fff4f4;
+  color: #9f2424;
+}
+
+.resetDistributionButton:hover {
+  background: #ffe9e9;
+}
+
+.loadDashboard {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(150px, 1fr));
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.loadMetric {
+  min-height: 118px;
+  padding: 14px;
+  border: 1px solid #d8dfd2;
+  border-radius: 8px;
+  background: #f7faf5;
+}
+
+.loadMetric span,
+.loadMetric small {
+  display: block;
+  color: #587065;
+  font-size: 12px;
+  font-weight: 800;
+  line-height: 1.25;
+  text-transform: uppercase;
+}
+
+.loadMetric strong {
+  display: block;
+  margin: 12px 0 8px;
   color: #10231d;
-  font: inherit;
-  font-weight: 800;
-  outline: none;
-  text-align: right;
+  font-size: 20px;
+  font-weight: 900;
+  line-height: 1.15;
 }
 
-.distributionTable input:focus {
-  border-color: #6f836f;
-  background: #ffffff;
+.memberLoads {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 10px;
+  margin-bottom: 18px;
 }
 
-.productColumn,
-.productCell {
-  position: sticky;
-  left: 0;
-  z-index: 4;
-  border-right: 2px solid #10231d;
+.memberLoadCard {
+  min-height: 92px;
+  padding: 12px;
+  border: 1px solid #d8dfd2;
+  border-radius: 8px;
 }
 
-.amountColumn {
-  position: sticky;
-  left: 240px;
-  z-index: 4;
-}
-
-.weightColumn {
-  position: sticky;
-  left: 336px;
-  z-index: 4;
-  border-right: 2px solid #10231d;
-}
-
-.distributionTable td:nth-child(2) {
-  position: sticky;
-  left: 240px;
-  z-index: 3;
-  font-weight: 800;
-  text-align: right;
-}
-
-.distributionTable td:nth-child(3) {
-  position: sticky;
-  left: 336px;
-  z-index: 3;
-  border-right: 2px solid #10231d;
-  font-weight: 800;
-  text-align: right;
-}
-
-.distributionTable th.productColumn,
-.distributionTable th.amountColumn,
-.distributionTable th.weightColumn {
-  z-index: 8;
-}
-
-.memberColumn {
-  position: relative;
-}
-
-.resultColumn {
-  position: relative;
-}
-
-.actionsColumn {
-  position: relative;
-}
-
-.distributionTable th.resultColumn,
-.distributionTable th.actionsColumn,
-.resultCell {
-  border-left: 2px solid #10231d;
-}
-
-.distributionTable th.actionsColumn,
-.distributionTable td:last-child {
-  border-right: 2px solid #10231d;
-}
-
-.productCell span {
+.memberLoadCard span {
   display: block;
   overflow: hidden;
-  font-weight: 800;
+  color: #10231d;
+  font-size: 14px;
+  font-weight: 900;
+  line-height: 1.25;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
 
-.productCell small {
+.memberLoadCard strong {
   display: block;
-  margin-top: 2px;
+  margin-top: 10px;
+  color: #10231d;
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 1;
+}
+
+.memberLoadCard small {
+  display: block;
+  margin-top: 8px;
   color: #587065;
   font-size: 12px;
   font-weight: 800;
 }
 
-.underAssignedRow td {
-  background: #fff7df;
+.maleMember {
+  background: #eef6ff;
+  border-color: #b8d7f0;
 }
 
-.completeRow td {
+.femaleMember {
+  background: #fff0f5;
+  border-color: #efbfd0;
+}
+
+.ingredientList {
+  display: grid;
+  gap: 14px;
+}
+
+.ingredientCard {
+  padding: 14px;
+  border: 1px solid #d8dfd2;
+  border-radius: 8px;
+  background: #ffffff;
+}
+
+.underAssigned {
+  border-color: #ead8a5;
+  background: #fff8e5;
+}
+
+.completeAssigned {
+  border-color: #c8dfc2;
   background: #f0faed;
 }
 
-.overAssignedRow td {
-  background: #fff0f0;
+.overAssigned {
+  border-color: #f0c8c8;
+  background: #fff4f4;
 }
 
-.resultCell {
+.ingredientHeader {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.ingredientHeader h2 {
+  color: #10231d;
+  font-size: 22px;
   font-weight: 900;
+  line-height: 1.15;
+}
+
+.ingredientHeader span {
+  display: inline-flex;
+  margin-top: 8px;
+  padding: 4px 8px;
+  border-radius: 8px;
+  background: rgba(16, 35, 29, 0.08);
+  color: #42564d;
+  font-size: 12px;
+  font-weight: 900;
+}
+
+.ingredientStats {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(92px, 1fr));
+  gap: 8px;
+  min-width: min(520px, 100%);
+}
+
+.toggleIngredientButton {
+  align-self: stretch;
+  min-width: 112px;
+  padding: 0 12px;
+  border: 1px solid #d8dfd2;
+  border-radius: 8px;
+  background: #ffffff;
+  color: #10231d;
+  font-size: 13px;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.toggleIngredientButton:hover {
+  background: #eef4ea;
+}
+
+.toggleIngredientButton[aria-expanded="true"] {
+  border-color: #10231d;
+  background: #10231d;
+  color: #ffffff;
+}
+
+.ingredientStats div {
+  padding: 9px 10px;
+  border: 1px solid rgba(16, 35, 29, 0.12);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.72);
+}
+
+.ingredientStats small {
+  display: block;
+  color: #587065;
+  font-size: 11px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.ingredientStats strong {
+  display: block;
+  margin-top: 6px;
+  color: #10231d;
+  font-size: 18px;
+  font-weight: 900;
+  line-height: 1;
+}
+
+.progressTrack {
+  height: 8px;
+  margin: 14px 0;
+  overflow: hidden;
+  border-radius: 999px;
+  background: rgba(16, 35, 29, 0.12);
+}
+
+.progressValue {
+  height: 100%;
+  border-radius: inherit;
+  background: #10231d;
+}
+
+.ingredientDetails {
+  padding-top: 2px;
+}
+
+.assignmentGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+  gap: 10px;
+}
+
+.assignmentCell {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 82px;
+  gap: 6px 10px;
+  align-items: center;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.assignmentCell span {
+  overflow: hidden;
+  color: #10231d;
+  font-size: 14px;
+  font-weight: 900;
+  line-height: 1.2;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.assignmentCell small {
+  color: #587065;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.assignmentCell input {
+  grid-row: span 2;
+  width: 82px;
+  min-height: 38px;
+  padding: 7px 8px;
+  border: 1px solid rgba(16, 35, 29, 0.16);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.82);
+  color: #10231d;
+  font: inherit;
+  font-weight: 900;
+  outline: none;
   text-align: right;
 }
 
-.actionsCell {
-  border-left: 2px solid #10231d;
+.assignmentCell input:focus {
+  border-color: #10231d;
+  background: #ffffff;
 }
 
 .rowActions {
   display: flex;
-  gap: 6px;
-  min-width: 0;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 12px;
 }
 
 .rowActions button {
-  min-height: 30px;
-  padding: 0 8px;
+  min-height: 36px;
+  padding: 0 12px;
   border: 1px solid #d8dfd2;
-  border-radius: 7px;
+  border-radius: 8px;
   background: #ffffff;
   color: #10231d;
-  font-size: 12px;
-  font-weight: 800;
+  font-size: 13px;
+  font-weight: 900;
   cursor: pointer;
 }
 
@@ -370,19 +560,18 @@
   background: #eef4ea;
 }
 
-.distributionTable tfoot td {
-  position: sticky;
-  bottom: 0;
-  z-index: 6;
-  border-top: 2px solid #10231d;
-  background: #ffffff;
-  font-weight: 900;
-  text-align: right;
-}
+@media (max-width: 1100px) {
+  .loadDashboard {
+    grid-template-columns: repeat(2, minmax(160px, 1fr));
+  }
 
-.distributionTable tfoot .productCell {
-  z-index: 7;
-  text-align: left;
+  .ingredientHeader {
+    flex-direction: column;
+  }
+
+  .ingredientStats {
+    width: 100%;
+  }
 }
 
 @media (max-width: 920px) {
@@ -409,5 +598,26 @@
   .searchField,
   .teamSwitcher {
     width: 100%;
+  }
+
+  .ingredientStats,
+  .loadDashboard {
+    grid-template-columns: 1fr;
+  }
+
+  .subsectionHeader,
+  .sortControl {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .productsActions,
+  .autoDistributionButton,
+  .resetDistributionButton {
+    width: 100%;
+  }
+
+  .sortButtons {
+    justify-content: flex-start;
   }
 }
