@@ -1,4 +1,6 @@
-Camp Planner — система для організації одного туристичного походу
+# Camp Planner — система для організації одного туристичного походу
+
+Демо: [camp-planner-eight.vercel.app](https://camp-planner-eight.vercel.app)
 
 Ідея проєкту
 
